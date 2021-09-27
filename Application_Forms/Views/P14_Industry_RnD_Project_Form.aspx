@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Login.master" AutoEventWireup="true" CodeFile="P14_Industry_RnD_Project_Form.aspx.cs" Inherits="Individual_Users_P14_Industry_RnD_Project_Form" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P14_Industry_RnD_Project_Form.aspx.cs" Inherits="Individual_Users_P14_Industry_RnD_Project_Form" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br />
