@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" CodeFile="Approval_Form.Master.vb" Inherits="Personal_Users_MasterPage" %>
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Personal_Users_MasterPage" %>
 
 <!DOCTYPE html>
 
