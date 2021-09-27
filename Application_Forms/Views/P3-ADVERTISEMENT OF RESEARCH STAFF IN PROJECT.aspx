@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="Application_Forms_Views_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="false" CodeFile="P3-ADVERTISEMENT OF RESEARCH STAFF IN PROJECT.aspx.vb" Inherits="Application_Forms_Views_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
@@ -154,7 +154,7 @@
                                 <tr>
                                     <td class="auto-style13" style="width: 157px"><strong>Number of vacancy:</strong></td>
                                     <td >
-                                        <asp:TextBox ID="TextBox7" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;"  Height="24px" TextMode="Date" Width="250px" MaxLength="5000"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox7" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;"  Height="24px" Width="250px" MaxLength="5000"></asp:TextBox>
                                     </td>
                                 </tr>
                                 <tr>
@@ -163,7 +163,7 @@
                                 <tr>
                                     <td class="auto-style13" style="width: 157px"><strong>Project Title:</strong></td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox8" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;" Height="24px" TextMode="Date" Width="250px" MaxLength="5000"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox8" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;" Height="24px" Width="250px" MaxLength="5000"></asp:TextBox>
                                     </td>
                                     <td>&nbsp;</td>
                                 </tr>
@@ -174,7 +174,7 @@
                                 <tr>
                                     <td class="auto-style10" style="width: 157px"><strong>Principal Invigilator:</strong></td>
                                     <td class="auto-style6">
-                                        <asp:TextBox ID="TextBox9" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;" Height="24px" TextMode="Date" Width="250px" MaxLength="5000"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox9" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;" Height="24px" Width="250px" MaxLength="5000"></asp:TextBox>
                                     </td>
                                     <td class="auto-style7"></td>
                                 </tr>
@@ -184,7 +184,7 @@
                                 <tr>
                                     <td class="auto-style13" style="width: 157px"><strong>Project Tenure</strong></td>
                                     <td class="auto-style5">
-                                         <asp:TextBox ID="TextBox4" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;" Height="24px" TextMode="Date" Width="250px" MaxLength="5000"></asp:TextBox>
+                                         <asp:TextBox ID="TextBox4" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;" Height="24px" Width="250px" MaxLength="5000"></asp:TextBox>
                                     </td>
                                     <td>&nbsp;</td>
                                 </tr>
@@ -348,7 +348,7 @@
                                     <td style=" text-align:center"><strong>Application Deadline:</strong></td>
                                     <td class="auto-style5">
                                         
-                                            <asp:TextBox ID="TextBox12" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left; margin-left: 43px" Height="24px" TextMode="Date" Width="250px" MaxLength="5000"/>
+                                            <asp:TextBox ID="TextBox12" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left; margin-left: 43px" Height="24px"  Width="250px" MaxLength="5000"/>
                                         </td>
                      </tr>
                   
@@ -367,7 +367,7 @@
                                     <td style="margin-right:0px; width: 20px;"><strong style="float:left; width: 119px;">Contact Email:</strong>&nbsp;</td>
                                     <td class="auto-style5">
                                         
-                                            <asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left; margin-left: 43px" Height="24px" TextMode="Date" Width="250px" MaxLength="5000"></asp:TextBox>
+                                            <asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left; margin-left: 43px" Height="24px"  Width="250px" MaxLength="5000"></asp:TextBox>
                                         
                              
                                     </td>

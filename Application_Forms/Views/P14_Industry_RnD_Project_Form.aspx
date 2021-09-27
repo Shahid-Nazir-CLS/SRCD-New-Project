@@ -243,7 +243,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <!---Items Gridview-->
-                <div id="div_item_details" runat="server" visible="false">
+               <%-- <div id="div_item_details" runat="server" visible="false">--%>
                     <tr>
                         <td>
                             <div align="left" style="margin-left:20px">
