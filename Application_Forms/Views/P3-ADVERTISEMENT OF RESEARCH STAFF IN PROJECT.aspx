@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="false" CodeFile="P3-ADVERTISEMENT OF RESEARCH STAFF IN PROJECT.aspx.vb" Inherits="Application_Forms_Views_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P3-ADVERTISEMENT OF RESEARCH STAFF IN PROJECT.aspx.cs" Inherits="P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
