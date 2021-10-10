@@ -101,43 +101,81 @@
 
                               </tr>
 
-                             <tr>
-			            <td colspan="3";style=" height: 58px;" align="center";border: 1px solid #999;width="">
-                            <div align="left" style="margin-left:20px">
-			                <table style="width: 100% ;" border:1px solid #999>
-                                <tr>
-                                    <td style=" height: 22px">Funding Agency &amp;Scheme</td>
-                                    <td style="height: 22px; ">Title of the proposal</td>
-                                    <td style=" height: 22px">PI,Co-I&#39;s details</td>
+                              <tr>
+                <td colspan="2" style="height: 15px;" align="center">
+                    <div align="left" style="margin-left: 20px">
+                        <table id="Table1" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
+
+                            <tbody>
+                                <tr align="left">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Funding Agency &amp;Scheme</strong></span>
+                                        </div>
+</td>
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Title of the proposal</strong></span>
+                                        </div>
+</td>
+<td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>PI,Co-I&#39;s details</strong></span>
+                                        </div>
+</td>
+
+
+                                    
+                                   
                                 </tr>
-                                <tr>
-                                    <td style=" height: 70px">
-                                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                <tr align="left">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox1" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
-                                    <td style=" height: 70px">
-                                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                   <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
-                                    <td style=" height: 70px">
-                                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td >Address of the funding agency</td>
-                                    <td >Number of final hard/and soft copies</td>
-                                    <td >Last Date(if submitting for a special<br />
-&nbsp;call for proposal)</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 280px; height: 70px">
-                                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-                                    </td>
-                                    <td style="width: 280px; height: 70px">
-                                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-                                    </td>
-                                    <td style="width: 280px; height: 70px">
-                                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                                   <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox3" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
                                 </tr>
+                                 <tr align="left">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Address of the funding agency</strong></span>
+                                        </div>
+</td>
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Number of final hard/and soft copies</strong></span>
+                                        </div>
+</td>
+<td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Last Date(if submitting for a special<br />
+&nbsp;call for proposal)</strong></span>
+                                        </div>
+</td>
+
+
+                                    
+                                   
+                                </tr>
+                                
+                              
+                                <tr align="left">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox4" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
+                                    </td>
+                                   <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox5" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
+                                    </td>
+                                   <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox6" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                               
+                                </tbody>
                             </table>
                                 </div>
 
@@ -177,22 +215,43 @@
 			                &nbsp;</td>
 			        </tr> 
                  <tr>
-			            <td colspan="3" style=" height: 15px;" align="center";border: 1px solid #999;>
+			          <td colspan="2" style="height: 15px;" align="center">
+                    <div  style="margin-left: 20px">
+                        <table id="Table2" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
 
-                             <div align="left" style="margin-left:20px">
-			                <table style="width: 100% ;border: 1px solid #999;">
-                                <tr >
-                                    <td >Name of Reviewer-1</td>
-                                    <td>Name of Reviewer-2</td>
+                            <tbody>
+                                  <tr>
+               
+                           
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Name of Reviewer-1</strong></span>
+                                        </div>
+</td>
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
+                                            <span style="font-size: 12px; color: black;">
+                                                <strong>Name of Reviewer-2</strong></span>
+                                        </div>
+</td>
+
+
+
+                                    
+                                   
                                 </tr>
-                                <tr>
-                                    <td >
-                                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                                 <tr align="left">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox7" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
-                                    <td >
-                                        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                                   <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
+                                        <asp:TextBox ID="TextBox8" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
+                                  
                                 </tr>
+                            
+                               
+                               
+                                </tbody>
                             </table>
                         </div>
                             
