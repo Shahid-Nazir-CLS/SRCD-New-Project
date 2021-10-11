@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P6-PAYMENT OF FELLOWSHIP OF RESEARCH STAFF.aspx.cs" Inherits="P6_PAYMENT_OF_FELLOWSHIP_OF_RESEARCH_STAFF" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P6-PAYMENT_OF_FELLOWSHIP_OF_RESEARCH_STAFF.aspx.cs" Inherits="P6_PAYMENT_OF_FELLOWSHIP_OF_RESEARCH_STAFF" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">

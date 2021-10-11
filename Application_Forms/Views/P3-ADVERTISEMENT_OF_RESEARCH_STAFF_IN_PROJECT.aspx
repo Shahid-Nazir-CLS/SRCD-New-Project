@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P3-ADVERTISEMENT OF RESEARCH STAFF IN PROJECT.aspx.cs" Inherits="P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P3-ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT.aspx.cs" Inherits="P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
