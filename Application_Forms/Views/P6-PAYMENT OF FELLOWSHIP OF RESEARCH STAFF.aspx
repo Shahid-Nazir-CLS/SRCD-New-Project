@@ -67,7 +67,7 @@
 
             <tr>
                 <td colspan="3" style="height: 15px;">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <span style="font-size: 15px;"><strong>To,</strong></span>
                         &nbsp;
                     </div>
@@ -78,7 +78,7 @@
             </tr>
             <tr>
                 <td colspan="3" style="height: 15px;">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <span style="font-size: 15px;"><strong>Associate Dean-SRCD</strong></span>
                         &nbsp;
                     </div>
@@ -96,7 +96,7 @@
             </tr>
             <tr>
                 <td colspan="3" style="height: 15px;">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <span style="font-size: 15px;">Kindly arrange to pay me the fellowship for the month of </span>
                         <asp:TextBox ID="TextBox7" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="15%" Height="24px"></asp:TextBox>
                         .
@@ -112,7 +112,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="height: 15px;" align="center">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <table id="Table1" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
 
                             <tbody>
@@ -126,7 +126,7 @@
                                         </div>
 
                                     </td>
-                                    <td style="border: 1px solid Black; border-collapse: collapse" colspan="3">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; width: 632px;" colspan="3">
                                         <asp:TextBox ID="TextBox14" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
                                 </tr>
@@ -137,7 +137,7 @@
                                                 <strong>PI Name:</strong></span>
                                     </td>
 
-                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4;text-align:center" colspan="2">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4;text-align:center; width: 632px;" colspan="2">
                                             <span style="font-size: 12px; color: black;">
                                                 <strong>Name of the Student & Department:</strong></span>
                                     </td>
@@ -147,7 +147,7 @@
                                             <asp:TextBox ID="TextBox6" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox>
                                     </td>
 
-                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4;"colspan="2">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 632px;"colspan="2">
                                             <asp:TextBox ID="TextBox11" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox>
                                     </td>
                                 </tr>
@@ -203,13 +203,15 @@
             </tr>
 
             <tr>
-                <td colspan="2" style="height: 15px;" align="center">
+                <td colspan="2" style="height: 15px;" align="center"></td>
+                    </tr>
                         <tr>
                 <td colspan="2" style="height: 15px;" align="center"></td>
 
             </tr>
+            <tr>
                 <td colspan="2" style="height: 15px;" align="center">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <table id="Table2" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
 
                             <tbody>
@@ -224,9 +226,6 @@
                             </tbody>
                         </table>
                     </div>
-                </td>
-
-            </tr>
                 </td>
 
             </tr>
@@ -248,7 +247,7 @@
             </tr>
             <tr>
                 <td  style="height: 15px;" align="left">
-                    <table id="Table3" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 100%; margin-left:20px" cellspacing="0" cellpadding="6">
+                    <table id="Table3" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%; margin-left: 7%" cellspacing="0" cellpadding="6">
 
                             <tbody>
                                 <tr align="center" style="background: #F4F4F4">
@@ -330,13 +329,13 @@
             </tr>
             <tr>
                 <td colspan="2" style="height: 15px;" align="left">
-                    <span style="margin-left: 20px; font-size: 15px;">Recommended for the payment:
+                    <span style="margin-left: 5%; font-size: 15px;">Recommended for the payment:
                     </span>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="height: 15px;" align="left">
-                    <span style="margin-left: 20px; font-size: 15px;">1.&nbsp;&nbsp;&nbsp;&nbsp;Supervisor’s (or PI) Signature:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+                    <span style="margin-left: 5%; font-size: 15px;">1.&nbsp;&nbsp;&nbsp;&nbsp;Supervisor’s (or PI) Signature:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
                         &nbsp;&nbsp;&nbsp;&nbsp;Supervisor’s (or PI) Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox4" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
                     </span>
                 </td>
@@ -347,7 +346,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="height: 15px;" align="left">
-                    <span style="margin-left: 20px; font-size: 15px;">2.&nbsp;&nbsp;&nbsp;&nbsp;Head of the Department Signature:&nbsp;<asp:TextBox ID="TextBox8" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+                    <span style="margin-left: 5%; font-size: 15px;">2.&nbsp;&nbsp;&nbsp;&nbsp;Head of the Department Signature:&nbsp;<asp:TextBox ID="TextBox8" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
                         &nbsp;&nbsp;&nbsp;&nbsp;Head of the Department Name:&nbsp;<asp:TextBox ID="TextBox9" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
                     </span>
                 </td>
@@ -375,7 +374,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="height: 15px;" align="left">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <span style="font-size: 15px;">Purpose:</span>
                         &nbsp;
                     </div>
@@ -386,7 +385,7 @@
             <tr>
 
                 <td colspan="4" style="height: 15px;" align="center">
-                    <div align="left" style="margin-left: 20px">
+                    <div align="left" style="margin-left: 5%">
                         <table id="Table2" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
 
                             <tbody>
@@ -447,7 +446,7 @@
 
             <tr>
                 <td colspan="2">
-                    <div align="left" style="margin-left: 20px; display: none;">
+                    <div align="left" style="margin-left: 5%; display: none;">
                         <table id="course_details_table" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
 
                             <tbody>
