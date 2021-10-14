@@ -116,7 +116,7 @@
             <tr>
                 <td colspan="2" style="height: 15px;" align="center">
                     <div align="left" style="margin-left: 20px">
-                        <table id="Table1" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
+                        <table id="Table1" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%; background: #F4F4F4;" cellspacing="0" cellpadding="6">
 
                             <tbody>
 
@@ -131,6 +131,9 @@
                                     </td>
                                     <td style="border: 1px solid Black; border-collapse: collapse" colspan="3">
                                         <asp:TextBox ID="TextBox14" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
+                                        <br />
+                                        <asp:RequiredFieldValidator ID="reqProject" runat="server" ControlToValidate="TextBox14" ErrorMessage="Enter Project" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
                                     </td>
                                 </tr>
 
@@ -145,6 +148,8 @@
                                     <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
                                         <asp:TextBox ID="TextBox6" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="95%" Height="24px"></asp:TextBox>
 
+                                        <asp:RequiredFieldValidator ID="reqPI" runat="server" ControlToValidate="TextBox6" ErrorMessage="Enter PI Name" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
                                     </td>
 
                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4;">
@@ -158,6 +163,8 @@
                                     <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
 
                                         <asp:TextBox ID="TextBox11" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="95%" Height="24px"></asp:TextBox>
+
+                                        <asp:RequiredFieldValidator ID="reqCOI" runat="server" ControlToValidate="TextBox11" ErrorMessage="Enter Co-I Name" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
 
@@ -172,11 +179,23 @@
 
                                             <tr>
                                                 <td style="border: 1px solid Black; border-collapse: collapse">
-                                                    <asp:TextBox ID="TextBox5" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox></td>
+                                                    <asp:TextBox ID="TextBox5" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox>
+
+                                                    <asp:RequiredFieldValidator ID="reqReleasedAmount" runat="server" ControlToValidate="TextBox5" ErrorMessage="Enter Released Amount" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                                                </td>
                                                 <td style="border: 1px solid Black; border-collapse: collapse" colspan="2">
-                                                    <asp:TextBox ID="TextBox10" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox></td>
+                                                    <asp:TextBox ID="TextBox10" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox>
+
+                                                    <asp:RequiredFieldValidator ID="reqCurrExp" runat="server" ControlToValidate="TextBox10" ErrorMessage="Enter Current Expenses" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                                                </td>
                                                 <td style="border: 1px solid Black; border-collapse: collapse">
-                                                    <asp:TextBox ID="TextBox15" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox></td>
+                                                    <asp:TextBox ID="TextBox15" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="97%" Height="24px"></asp:TextBox>
+
+                                                    <asp:RequiredFieldValidator ID="reqBal" runat="server" ControlToValidate="TextBox15" ErrorMessage="Enter Balance" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                                                </td>
                                             </tr>
 
                                         </table>
@@ -209,6 +228,13 @@
             <tr>
                 <td style="height: 15px; padding-right: 10%" align="right" colspan="4"><span style="font-size: 12px; color: black"><strong>Signature of PI/Co-I&nbsp;</strong></span>
                     <asp:TextBox ID="TextBox16" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+
+                    <br />
+                    <br />
+
+                    <asp:RequiredFieldValidator ID="reqSigPI" runat="server" Font-Bold="true" Font-Size="22px" ControlToValidate="TextBox16" ErrorMessage="Enter Signature of PI/CO-I" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
+
                 </td>
 
             </tr>
@@ -234,7 +260,7 @@
 
                 <td colspan="4" style="height: 15px;" align="center">
                     <div align="left" style="margin-left: 20px">
-                        <table id="Table2" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
+                        <table id="Table2" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%; background: #F4F4F4;" cellspacing="0" cellpadding="6">
 
                             <tbody>
 
@@ -249,20 +275,32 @@
                                     <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
                                         <asp:TextBox ID="TextBox3" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
 
-                                    </td>
-                                    <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
-                                        <asp:TextBox ID="txt_Purpose_visit" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="reqHead" runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Head of A/C" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
 
                                     </td>
-
                                     <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
+                                        <asp:TextBox ID="TextBox19" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
 
-                                        <asp:TextBox ID="txt_Type_of_Leave" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="reqReleasedAmt" runat="server" ControlToValidate="TextBox19" ErrorMessage="Enter Released Amount / Unspent Balance" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
                                     </td>
 
                                     <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
 
-                                        <asp:TextBox ID="txt_Mode_Of_Travel" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox18" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+
+                                        <asp:RequiredFieldValidator ID="reqCurrentExp" runat="server" ControlToValidate="TextBox19" ErrorMessage="Enter Current Expenses" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
+
+                                    </td>
+
+                                    <td style="border: 1px solid Black; border-collapse: collapse; width: 250px; vertical-align: top; margin-top: 2px">
+
+                                        <asp:TextBox ID="TextBox17" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="250px" Height="24px"></asp:TextBox>
+
+                                        <asp:RequiredFieldValidator ID="reqBalance" runat="server" ControlToValidate="TextBox17" ErrorMessage="Enter Balance" ValidationGroup="form5" ForeColor="Red"></asp:RequiredFieldValidator>
+
+
                                     </td>
                                 </tr>
                                 <tr align="center" style="background: #F4F4F4">
@@ -364,7 +402,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <asp:Button ID="btn_preview" runat="server" Font-Bold="true" Height="28px" TabIndex="7" Text="Submit" ValidationGroup="lab11" Width="160px" />
+                                    <asp:Button ID="btn_preview" runat="server" Font-Bold="true" Height="28px" TabIndex="7" Text="Submit" ValidationGroup="form5" Width="160px" />
                                     <br />
                                     <br />
                                     <br />
