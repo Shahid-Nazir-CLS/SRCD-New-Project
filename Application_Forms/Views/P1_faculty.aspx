@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P1-COVERING LETTER FOR SUBMITTING NEW PROJECT PROPOSAL.aspx.cs" Inherits="P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P1_faculty.aspx.cs" Inherits="Application_Forms_Views_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
@@ -134,7 +134,7 @@
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                                     </td>
                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
-                                        <asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox2" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                                     </td>
                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
@@ -176,7 +176,7 @@
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                                     </td>
                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
-                                        <asp:TextBox ID="TextBox6" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox6" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px" TextMode="Date" ></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
@@ -205,134 +205,22 @@
 
 			            </td>
 			        </tr>      
-                 <tr>
-			            <td colspan="3" style=" height: 15px;">
-                          <div align="left" style="margin-left:20px"  >
-                             <span style="font-size:15px;color:black"><strong>To be filled by HoD:</strong></span>
-                             &nbsp;<br />
-                              </div>
-                              </td>
-
-                              </tr>
-                 <tr>
-			            <td colspan="3" style=" height: 15px;" align="center">
-
-                            
-			                &nbsp;</td>
-			        </tr> 
-                 <tr>
-			          <td colspan="2" style="height: 15px;" align="center">
-                    <div  style="margin-left: 20px">
-                        <table id="Table2" class="body_txt_in" style="border: 1px solid Black; border-collapse: collapse; width: 90%" cellspacing="0" cellpadding="6">
-
-                            <tbody>
-                                  <tr>
-               
-                           
-                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
-                                            <span style="font-size: 12px; color: black;">
-                                                <strong>Name of Reviewer-1</strong></span>
-                                        </div>
-</td>
-                                    <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; height: 43px;"><div>
-                                            <span style="font-size: 12px; color: black;">
-                                                <strong>Name of Reviewer-2</strong></span>
-                                        </div>
-</td>
-
-
-
-                                    
-                                   
-                                </tr>
-                                 <tr align="left">
-                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
-                                        <asp:TextBox ID="TextBox7" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox7" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
-                                    </td>
-                                   <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
-                                        <asp:TextBox ID="TextBox8" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox8" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
-                                    </td>
-                                  
-                                </tr>
-                            
-                               
-                               
-                                </tbody>
-                            </table>
-                        </div>
-                            
-			            </td>
-			        </tr>  
-			               
-                 <tr>
-			            <td colspan="3" style=" height: 15px;" align="center">
-
-			            </td>
-			        </tr>
-                <tr>
-			            <td colspan="3" style=" height: 15px;">
-                          <div align="left" style="margin-left:20px"  >
-                             <span style="font-size:15px;color:black"><strong>Exemption Clause:</strong> As PI is having an experience of running 2 or more major projects(each Rs 25 lakhs or above)in last 5 years ,he is exempted from technical review at the Department level as per his/her request.</span>
-                             &nbsp;<br />
-                              </div>
-                              </td>
-
-                              </tr>
-                <tr>
-			            <td colspan="3" style=" height: 15px;" align="center">
-
-			            </td>
-			        </tr>
-                 <tr>
-			            <td colspan="3" style=" height: 15px;">
-                          <div align="right" style="margin-right:20px">
-                              <asp:Label ID="Label1" runat="server" Font-Size="13px" Text="(Signature of HoD)" Font-Bold="true"></asp:Label>
-                              <input id="Text1" type="text" />
-                          </div>
-			            </td>
-			        </tr>
-                <tr>
-			            <td colspan="3" style=" height: 15px;" align="center">
-
-			            </td>
-			        </tr>
-                 <tr>
-			            <td colspan="3" style=" height: 15px;">
-                          <div align="left" style="margin-left:20px">
-                              <asp:Label ID="Label3" runat="server" Font-Size="13px" Text=" (SRCD Receipt Date and Signature)" Font-Bold="true"></asp:Label>
-                             <asp:Label ID="Label4" runat="server" Font-Size="13px"  Text=""></asp:Label>
-                              <input id="Text1" type="text" />
-                          </div>
-			            </td>
-			        </tr>
-
-                <tr>
-			            <td colspan="3" style=" height: 15px;" align="center">
-
-			            </td>
-			        </tr>
-                 <tr>
-			            <td colspan="3" style=" height: 15px;">
-                          <div align="left" style="margin-left:20px">
-                              <asp:Label ID="Label2" runat="server" Font-Size="13px" Text="(Associate Dean SRCD)" Font-Bold="true"></asp:Label>
-                              <input id="Text1" type="text" />
-                          </div>
-			            </td>
-			        </tr>
                 <tr>
                     <td style=" height: 25px;" align="center"></td>
                     <td align="center" style=" height: 25px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style=" height: 15px;">
+                    <td style=" height: 15px;" forecolor="Green">
                         <div align="center">
-                            <asp:Button ID="Button1" runat="server" Text="Submit" Font-Bold="True" TabIndex="4" Height="30px" Width="180px"   /></div>
-                            <div style="margin-top: 10px;" align="center">
-                            <asp:Button ID="Button2" runat="server" Text="Preview" Font-Bold="True"  TabIndex ="4" Height="30px" Width="180px"   /></div>
-                    
-                        </td>
+                            
+                            <asp:Button ID="Button1" runat="server" Text="Submit" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="Button1_Click"   />
+                            <br />
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                        </div>
+                        
+                                                   </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                   <tr>
@@ -348,5 +236,6 @@
 
                 </tbody>
         </table>
+
 </asp:Content>
 

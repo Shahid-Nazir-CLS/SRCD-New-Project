@@ -46,7 +46,8 @@
                     <td style=" height: 15px;">
                         <div align="left" style="margin-left:20px">
                             <strong>Name of PI:</strong>
-                             &nbsp;<input id="Text1" type="text" /></div>
+                             &nbsp;<input id="Text1" type="text" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Text1" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -58,7 +59,8 @@
                     <td style=" height: 15px;">
                         <div align="left" style="margin-left:20px">
                             <strong>Name of Funding Agency:</strong>
-                             &nbsp;<input id="Text1" type="text" /></div>
+                             &nbsp;<input id="Text2" type="text" /><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Text2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -100,8 +102,8 @@
                             <strong>a.  How appropriate to the objectives ?</strong>
                             <br />
 
-                            <textarea name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea>
-                            </div>
+                            <textarea id="TextArea1" name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Required" ForeColor="Red" ControlToValidate="TextArea1"></asp:RequiredFieldValidator>
+&nbsp;</div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -115,8 +117,8 @@
                             <strong>b.  Supporting elements (Infrastructure facilities, available expertise with the PI, etc.) </strong>
                             <br />
 
-                            <textarea name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea>
-                            </div>
+                            <textarea id="TextArea2" name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextArea2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;</div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -131,8 +133,8 @@
 fails) </strong>
                             <br />
 
-                            <textarea name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea>
-                            </div>
+                            <textarea id="TextArea3" name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea><asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextArea3" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;</div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -146,8 +148,8 @@ fails) </strong>
                             <strong>3.  Relevance and applicability:</strong>
                             <br />
 
-                            <textarea name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea>
-                            </div>
+                            <textarea id="TextArea4" name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea><asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextArea4" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;</div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -177,7 +179,7 @@ fails) </strong>
 Investigator for improving and revising the proposal. If needed add more pages):</strong>
                             <br />
 
-                            <textarea name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea>
+                            <textarea id="TextArea5" name="comment" placeholder="enter comment here..." wrap="soft" style="width:100%;"></textarea>
                             </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
@@ -194,7 +196,8 @@ Investigator for improving and revising the proposal. If needed add more pages):
                     <td style=" height: 15px;">
                         <div align="left" style="margin-left:20px">
                             <strong>(Signature)</strong>
-                             &nbsp;<input id="Text1" type="file" /></div>
+                             &nbsp;<input id="Text5" type="file" /><asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="Text5" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -206,7 +209,8 @@ Investigator for improving and revising the proposal. If needed add more pages):
                     <td style=" height: 15px;">
                         <div align="left" style="margin-left:20px">
                             <strong>Name of the Reviewer</strong>
-                             &nbsp;<input id="Text1" type="text" /></div>
+                             &nbsp;<input id="Text6" type="text" /><asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="Text6" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -218,7 +222,8 @@ Investigator for improving and revising the proposal. If needed add more pages):
                     <td style=" height: 15px;">
                         <div align="left" style="margin-left:20px">
                             <strong>Department</strong>
-                             &nbsp;<input id="Text1" type="text" /></div>
+                             &nbsp;<input id="Text7" type="text" /><asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="Text7" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -229,8 +234,11 @@ Investigator for improving and revising the proposal. If needed add more pages):
                 <tr>
                     <td style=" height: 15px;">
                         <div align="center">
-                            <asp:Button ID="Button1" runat="server" Text="Submit and Preview" Font-Bold="True" TabIndex="4" Height="30px" Width="180px"  /></div>
-                    </td>
+                            <asp:Button ID="Button1" runat="server" Text="Submit" Font-Bold="True" TabIndex="4" Height="30px" Width="180px"  /></div>
+                         <div style="margin-top: 10px;" align="center">
+                            <asp:Button ID="Button2" runat="server" Text="Preview" Font-Bold="True"  TabIndex ="4" Height="30px" Width="180px"   /></div>
+                  
+                        </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                  <tr>

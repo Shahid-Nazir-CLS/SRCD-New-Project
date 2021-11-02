@@ -21,4 +21,9 @@ public partial class P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL : Sy
     {
     
     }
+
+    protected void TextBox2_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }
