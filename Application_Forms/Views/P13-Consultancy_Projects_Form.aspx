@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P14-Industry RnD Project Form.aspx.cs" Inherits="Individual_Users_P14_Industry_RnD_Project_Form" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P13-Consultancy_Projects_Form.aspx.cs" Inherits="Individual_Users_P13_Consultancy_Projects_Form" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <br />
+     <br />
     <asp:Panel ID="Panel1" runat="server">
         <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
             <tbody>
@@ -47,7 +47,7 @@
                     <td style=" height: 15px;" align="center">
                         <div>
                             <meta charset="utf-8" />
-                            <b id="docs-internal-guid-77be14f8-7fff-e807-82b3-92c339be413b" style="font-weight:normal;"><span style="font-size: small; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;">(Format for the Industry R&amp;D project)</span></b>
+                            <b id="docs-internal-guid-77be14f8-7fff-e807-82b3-92c339be413b" style="font-weight:normal;"><span style="font-size: small; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;">(Format for the consultancy project)</span></b>
                         </div>
                     </td>
                     <td align="center" style=" height: 15px;">&nbsp;</td>
@@ -138,32 +138,54 @@
                     <td style=" height: 15px;"">
                         <div align="left" style="margin-left:20px" >
                             <meta charset="utf-8" />
-                            <span><strong>Payment to be received (tick one):</strong><asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                                <asp:ListItem>Full</asp:ListItem>
-                                <asp:ListItem>Part</asp:ListItem>
+                            <span><strong>Type of Sponsorship (tick one):</strong><asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                                <asp:ListItem>Private sector</asp:ListItem>
+                                <asp:ListItem>Government sector</asp:ListItem>
+                                <asp:ListItem>Public sector</asp:ListItem>
+                                <asp:ListItem>Foreign agency</asp:ListItem>
+                                <asp:ListItem>Any other (Please specify)</asp:ListItem>
                             </asp:CheckBoxList>
+                            <strong>
+                            <asp:TextBox ID="TextBox10" runat="server" autocomplete="off" CssClass="txt" Height="24px" MaxLength="5000" Style="position: static; float:left;" TextMode="Date" Width="250px"></asp:TextBox>
+                            </strong>
+                            <br />
                             </span>
                         </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style=" height: 15px;"></td>
+                    <td style=" height: 15px; text-align: left;"><strong>The consultancy project involves (tick one):<asp:CheckBoxList ID="CheckBoxList3" runat="server">
+                        <asp:ListItem>Use of no institute facilities</asp:ListItem>
+                        <asp:ListItem>Use of institute facilities such as computer, network space</asp:ListItem>
+                        <asp:ListItem>Primary testing and interpretation including laboratory testing</asp:ListItem>
+                        <asp:ListItem>Any other (please provide details below):</asp:ListItem>
+                        </asp:CheckBoxList>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:TextBox ID="TextBox12" runat="server" autocomplete="off" CssClass="txt" Height="24px" MaxLength="5000" Style="position: static; float:left;" TextMode="Date" Width="250px"></asp:TextBox>
+                        </strong></td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
                     <td style=" height: 15px;">
                         <div align="left" style="margin-left:20px">
-                            <strong>
                             <meta charset="utf-8" />
-                            <b id="docs-internal-guid-b5089a2b-7fff-9f5a-c16f-1b949d156ba4">Date of commencement</b>:</strong> &nbsp;
-                             <asp:TextBox ID="TextBox7" runat="server" autocomplete="off" CssClass="txt" Style="position: static; float:left;"  Height="24px" TextMode="Date" Width="250px" MaxLength="5000"></asp:TextBox>
+                            <strong>Payment to be received (tick one):&nbsp;
+                            <asp:CheckBoxList ID="CheckBoxList4" runat="server">
+                                <asp:ListItem Selected="True">Full</asp:ListItem>
+                                <asp:ListItem>Part</asp:ListItem>
+                            </asp:CheckBoxList>
+                            </strong>
                         </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style=" height: 15px;"></td>
+                    <td style=" height: 15px; text-align: left;"><strong>Date of commencement:<br />
+                        <asp:TextBox ID="TextBox11" runat="server" autocomplete="off" CssClass="txt" Height="24px" MaxLength="5000" Style="position: static; float:left;" TextMode="Date" Width="250px"></asp:TextBox>
+                        </strong></td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
@@ -243,7 +265,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <!---Items Gridview-->
-               <%-- <div id="div_item_details" runat="server" visible="false">--%>
+                <div id="div_item_details" runat="server" visible="false">
                     <tr>
                         <td>
                             <div align="left" style="margin-left:20px">
@@ -378,11 +400,20 @@
                             </table>
                         </div>
                         <meta charset="utf-8" />
-                        <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Details of R&amp;D work (As per annexure 1)</strong></span></td>
+                        <span><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><strong>Details of consultancy work (As per annexure 1)</strong></td>
                     <td style="text-align: left">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style=" height: 15px;"></td>
+                    <td style=" height: 15px; text-align: left;"><strong>
+                        <br />
+                        Correspondence with the sponsor attached (please tick the appropriate):<br />
+                        <asp:CheckBoxList ID="CheckBoxList5" runat="server">
+                            <asp:ListItem>Request from sponsor</asp:ListItem>
+                            <asp:ListItem>Offer from PI</asp:ListItem>
+                            <asp:ListItem>Response from sponsor</asp:ListItem>
+                            <asp:ListItem>Approval/sanction letter</asp:ListItem>
+                        </asp:CheckBoxList>
+                        </strong></td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
@@ -390,10 +421,6 @@
                         <div align="left" style="margin-left:20px">
                             <meta charset="utf-8" />
                             <meta charset="utf-8" />
-                            D<strong>ocuments attached:<br /> &nbsp;<meta charset="utf-8" /><b id="docs-internal-guid-c83d6251-7fff-0737-5032-f3d957468c8c"><span>Approval/sanction letter:</span></b><b id="docs-internal-guid-c83d6251-7fff-0737-5032-f3d957468c8c" style="font-weight:normal;"><span><input id="File2" type="file" /><br />
-                            <meta charset="utf-8" />
-                            <b id="docs-internal-guid-64ab2919-7fff-54ec-301b-5723a48f8dd6">Approved Budget:</b></span></b>&nbsp;</strong>
-                            <input id="File3" type="file" />
                         </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
@@ -413,13 +440,23 @@
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style=" height: 25px;"></td>
+                    <td style=" height: 25px; text-align: left;">
+                        <br />
+                        <strong>Internal review done by (review reports attached):<br />&nbsp;&nbsp;<meta charset="utf-8" /><b id="docs-internal-guid-c83d6251-7fff-0737-5032-f3d957468c8c0" style="font-weight:normal;"><span>1.
+                        <input id="File2" type="file" />
+                        <br />
+                        <meta charset="utf-8" />
+                        &nbsp;2.</span></b></strong> <strong>
+                        <input id="File3" type="file" />
+                        </strong>
+                        <br />
+                    </td>
                     <td style=" height: 25px;"></td>
                 </tr>
                 <tr>
                     <td style=" height: 15px;"">
                         <div align="left" style="margin-left:20px" >
-                            <strong>Signature of the HOD(With Date):<input id="File5" type="file" /></strong></div>
+                            </div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
@@ -430,12 +467,14 @@
                 <tr>
                     <td style="height: 18px">
                         <div align="left" style="margin-left:20px" >
-                            <span><strong>Signature of DRC Convener (with Date) [only if manpower will be doing Ph.D at BITS]:<input id="File6" type="file" /></strong></span></div>
+                            <span><strong>Recommendations by the HOD/DRC:<input id="File6" type="file" /></strong></span></div>
                     </td>
                     <td style="height: 18px"></td>
                 </tr>
                 <tr>
-                    <td style=" height: 25px;"></td>
+                    <td style=" height: 25px; text-align: left;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Signature of the HOD(With Date):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="File8" type="file" />
+                        </strong></td>
                     <td style=" height: 25px;"></td>
                 </tr>
                 <%--  <tr>
@@ -462,7 +501,7 @@
                     <td style=" height: 20px;"></td>
                 </tr>
                 <tr>
-                    <td style="text-align: left">
+                    <td style="text-align: right">
 
                         <meta charset="utf-8" />
                         Signature of the Associate Dean:<input id="File4" type="file" /></td>
@@ -514,8 +553,7 @@
                     <td style="text-align: left">
 
                         <meta charset="utf-8" />
-                        <span><strong>Work plan 
-                        <br />
+                        <span><strong>Work plan (if laboratory work is involved)<br />
                         <br />
                         </strong></span>
 
@@ -526,6 +564,15 @@
 
                         <meta charset="utf-8" />
                         <span><strong>Time Lines<br />
+                        <br />
+                        <br />
+                        </strong></span></td>
+                </tr>
+                <tr>
+                   <td style="text-align: left">
+
+                        <meta charset="utf-8" />
+                        <span><strong>Any Other Informstion<br />
                         <br />
                         <br />
                         </strong></span></td>
