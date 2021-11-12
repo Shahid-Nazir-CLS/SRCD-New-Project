@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx.cs" Inherits="P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL_srcd_approval.aspx.cs" Inherits="P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
@@ -237,12 +237,11 @@
                                 </tr>
                                 <tr align="left">
                                     <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
-                                        <asp:TextBox ID="name_of_reviewer1" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="name_of_reviewer1" ErrorMessage="Enter name of reviewer 1" ForeColor="Red"></asp:RequiredFieldValidator>
+                                        
+                                        <asp:Label ID="name_of_reviewer1" runat="server" Font-Size="13px"  ForeColor="black" Text="name_of_reviewer1"></asp:Label>
                                     </td>
                                     <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;" colspan="1">
-                                        <asp:TextBox ID="name_of_reviewer2" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="name_of_reviewer2" ErrorMessage="Enter name of reviewer 2" ForeColor="Red"></asp:RequiredFieldValidator>
+                                        <asp:Label ID="name_of_reviewer2" runat="server" Font-Size="13px"  ForeColor="black" Text="name_of_reviewer2"></asp:Label>
                                     </td>
 
                                 </tr>

@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 public partial class Application_Forms_Views_Default : System.Web.UI.Page
 {
-    string connectionString = @"Server=localhost;Database=srcd;Uid=root;Pwd=root;";
+    string connectionString = @"Server=localhost;Database=srcd;Uid=root;Pwd=qwaszx@1234;";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -33,10 +33,9 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
                 sqlCmd.Parameters.AddWithValue("_Address_Of_The_Funding_Agency", TextBox4.Text.Trim());
                 sqlCmd.Parameters.AddWithValue("_Number_Of_Final_Hard_And_Soft_Copies", Convert.ToInt32(TextBox5.Text.Trim()));
                 sqlCmd.Parameters.AddWithValue("_Last_Date", TextBox6.Text.Trim().ToString());
-                sqlCmd.Parameters.AddWithValue("_Investigator_submission_timing",DateTime.Now.ToString());
+                sqlCmd.Parameters.AddWithValue("_Investigator_submission_timing", DateTime.Now.ToString());
                 sqlCmd.Parameters.AddWithValue("_Department_Of_investigator","1");
                 sqlCmd.ExecuteNonQuery();
-                Label1.Text = "Submitted Text Successfully";
                 string query = "SELECT COUNT(*) FROM TABLENAME WHERE id=1";
 
                 MySqlCommand cmd = new MySqlCommand(query, sqlCon);
@@ -51,17 +50,16 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
                 sqlCmd.Parameters.AddWithValue("_is_Hod_Approval_Required","yes");
                 sqlCmd.Parameters.AddWithValue("_is_SrcdDean_Approval_Required", "yes");
                 sqlCmd.Parameters.AddWithValue("_is_SrcdAssoDean_Required", "yes");
+                sqlCmd.Parameters.AddWithValue("_submitted_by", "Raksha");
+                sqlCmd.Parameters.AddWithValue("_submitted_on", DateTime.Now.ToString());
+                sqlCmd.Parameters.AddWithValue("_Hod_Approval", "Pending");
+                sqlCmd.Parameters.AddWithValue("_srcd_Approval", "Pending");
+                sqlCmd.Parameters.AddWithValue("_associate_dean_Approval", "Pending");
                 sqlCmd.ExecuteNonQuery();
-                Label2.Text="everything s allright";
+                Label2.Text="Submitted Successfully";
                 
 
                 sqlCon.Close();
-
-
-
-
-
-
 
             }
         }
