@@ -32,6 +32,8 @@ public partial class P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL : Sy
                 sqlCmd.Parameters.AddWithValue("_hod_approval_time", DateTime.Now.ToString());
                 sqlCmd.ExecuteNonQuery();
                 lbl_success.Text = "Submitted Successfully";
+                Response.Redirect("faculty_success_approve.aspx");
+
             }
         }
         catch (Exception ex)

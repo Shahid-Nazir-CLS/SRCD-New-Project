@@ -136,7 +136,7 @@
                                                             <asp:Label ID="lbl_current_date" runat="server" Text="current_date" ForeColor="#211D70" Font-Bold="true"></asp:Label>&nbsp;
                                                        <asp:Label ID="lbl_spacer" runat="server" Text="|" ForeColor="#211D70" Font-Bold="true"></asp:Label>&nbsp;
                                                   
-                                                   <a class="footer" href="../Signout.aspx"><strong><span style="font-size: 8pt">[Logout]</span></strong></a>
+                                                   <a class="footer" href="index.aspx"><strong><span style="font-size: 8pt">[Logout]</span></strong></a>
                                                         </div>
                                                     </td>
                                                 </tr>

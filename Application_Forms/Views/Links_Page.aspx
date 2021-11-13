@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="Links Page.aspx.cs" Inherits="P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="Links_Page.aspx.cs" Inherits="P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -46,7 +46,7 @@
 
             <tr>
                 <td colspan="3" style="height: 15px; padding-left: 5%" align="left">
-                    <a href="P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx">P1-COVERING LETTER FOR SUBMITTING NEW PROJECT PROPOSAL</a>
+                    <a href="P1_faculty.aspx">P1-COVERING LETTER FOR SUBMITTING NEW PROJECT PROPOSAL</a>
                 </td>
             </tr>
             <tr>

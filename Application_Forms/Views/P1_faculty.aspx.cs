@@ -57,7 +57,9 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
                 sqlCmd.Parameters.AddWithValue("_associate_dean_Approval", "Pending");
                 sqlCmd.ExecuteNonQuery();
                 Label2.Text="Submitted Successfully";
-                
+
+                Response.Redirect("faculty_success_submit.aspx");
+
 
                 sqlCon.Close();
 
