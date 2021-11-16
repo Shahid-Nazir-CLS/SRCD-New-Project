@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 
 public partial class Application_Forms_Views_Default : System.Web.UI.Page
@@ -13,7 +8,8 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
     StringBuilder captcha_code = new StringBuilder();
     protected void Page_Load(object sender, EventArgs e)
     {
-        FillCapctha();
+        if (Page.IsPostBack == false)
+            FillCapctha();
     }
 
 
@@ -22,14 +18,12 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
         try
         {
             Random random = new Random();
-            // Dim combination As String = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
             string combination = "123456789";
             for (int i = 0; i <= 3; i++)
                 captcha_code.Append(combination[random.Next(combination.Length)]);
 
-            captcha.Text = captcha_code.ToString();
             Session["captcha"] = captcha_code.ToString();
-            //imgCaptcha.ImageUrl = "Captcha/Captcha.aspx?" + DateTime.Now.Ticks.ToString();
+            imgCaptcha.ImageUrl = "Captcha/Captcha.aspx?" + DateTime.Now.Ticks.ToString();
         }
         catch
         {
@@ -39,9 +33,6 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-
-
-
         if (Session["captcha"].ToString() == txtBox_captcha.Text)
         {
             try
@@ -109,11 +100,8 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
                     sqlCmd.Parameters.AddWithValue("_associate_dean_Approval", "Pending");
                     sqlCmd.Parameters.AddWithValue("_dept_id", dept_id);
                     sqlCmd.ExecuteNonQuery();
-                    Label2.Text = "Submitted Successfully";
 
                     Response.Redirect("faculty_success_submit.aspx");
-
-
                     sqlCon.Close();
 
                 }
@@ -125,7 +113,7 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
         }
         else
         {
-            Label1.Text = "Label captch = " + captcha.Text + "       :   My captch : " + txtBox_captcha.Text;
+            Label1.Text = "Wrong Captcha";
         }
     }
 }

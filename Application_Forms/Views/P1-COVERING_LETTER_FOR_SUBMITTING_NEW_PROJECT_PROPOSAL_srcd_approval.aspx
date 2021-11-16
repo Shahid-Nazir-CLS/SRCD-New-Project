@@ -268,13 +268,37 @@
 
             </tr>
             <tr>
-                <td colspan="3" style="height: 15px;" align="center"></td>
+                <td colspan="3" style="height: 15px;" align="center">
+                    <br />
+                    <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                     <div align="right">
+                    <strong>Security Code:&nbsp;<span class="required">*</span></strong>
+
+                    <asp:TextBox ID="txtBox_captcha" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="5%" Height="24px"></asp:TextBox>
+                
+                    <asp:Image ID="imgCaptcha" runat="server" />
+
+                         <br />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtBox_captcha" ErrorMessage="Required" ForeColor="Red" style="margin-right:8%"></asp:RequiredFieldValidator>
+                         <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red" style="margin-right:6%"></asp:Label>
+                    <br />
+                         </div>
+                    <br />
+                    <br />
+                </td>
             </tr>
             <tr>
                 <td colspan="3" style="height: 15px;">
                     <div align="right" style="margin-right: 20px">
                         
                         <asp:Button ID="HOD_approve" runat="server" Text="Approve" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="HOD_approve_Click" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="HOD_reject" runat="server" Text="Reject" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="HOD_reject_Click" ValidationGroup="reject" />
                     </div>
                 </td>
             </tr>
