@@ -43,7 +43,7 @@
                             <asp:Label ID="lbl_faculty_heading" runat="server" Font-Bold="true" class="head_already" Font-Size="18px" Text="HOD :"></asp:Label>
                             <asp:Label ID="lbl_faculty_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="HOD Name"></asp:Label>&nbsp;&nbsp;
                             <asp:Label ID="lbl_department_heading" runat="server" Font-Bold="true" class="head_already" Font-Size="18px" Text="Department :"></asp:Label>
-                            <asp:Label ID="lbl_department_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="Department Name"></asp:Label>
+                            <asp:Label ID="lbl_hod_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="Department Name"></asp:Label>
                         </div>
                     </td>
                 </tr>

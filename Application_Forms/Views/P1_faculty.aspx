@@ -210,10 +210,25 @@
                     <td align="center" style=" height: 25px;">&nbsp;</td>
                 </tr>
                 <tr>
+                    <td style=" height: 25px;" align="center">
+                        <asp:TextBox ID="txtBox_captcha" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="10%" Height="24px"></asp:TextBox>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="captcha" runat="server" Text="Captcha Fill Code" Height="24px"></asp:Label>
+                    </td>
+                    <td align="center" style=" height: 25px;">&nbsp;</td>
+                </tr>
+
+
+                <tr>
+                    <td style=" height: 25px;" align="center"></td>
+                    <td align="center" style=" height: 25px;">&nbsp;</td>
+                </tr>
+                <tr>
                     <td style=" height: 15px;" forecolor="Green">
                         <div align="center">
                             
-                            <asp:Button ID="Button1" runat="server" Text="Submit" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="Button1_Click"   />
+                            <asp:Button ID="Button2" runat="server" Text="Submit" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="Button1_Click" />
+
                             <br />
                             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                             <br />
@@ -228,12 +243,6 @@
                     <td align="center" style=" height: 25px;">&nbsp;</td>
                 </tr>
                 
-
-                       
-    
-    
-
-
                 </tbody>
         </table>
 
