@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="faculty_success_approve.aspx.cs" Inherits="P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="faculty_success_reject.aspx.cs" Inherits="P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
@@ -19,7 +19,7 @@
 									<span style="font-size: 11pt;color:black"><strong><span style="font-size: 16pt">
                                         <br />
 										<span style="color: green; margin-top:30px">
-										You have successfully approved the form.</span><br />
+										You have successfully rejected the form.</span><br />
                                     </span>
                                         <br />
                                          </strong></span>
