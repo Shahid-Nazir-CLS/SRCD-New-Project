@@ -28,7 +28,7 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
             using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
             {
 
-                string auth_email = "hod.csis.hod.csis@pilani.bits-pilani.ac.in";
+                string auth_email = "hod.csis@pilani.bits-pilani.ac.in";
 
                 sqlCon.Open();
 
