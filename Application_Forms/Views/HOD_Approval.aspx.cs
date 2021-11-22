@@ -40,11 +40,15 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
                 MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
 
                 MySqlDataReader dr = cmd1.ExecuteReader();
-                dr.Read();
-                lbl_faculty_name.Text = dr.GetValue(0).ToString();
-                lbl_hod_name.Text = dr.GetValue(1).ToString();
+                if (dr.Read())
+                {
+                    dr.Read();
+                    lbl_faculty_name.Text = dr.GetValue(0).ToString();
+                    lbl_hod_name.Text = dr.GetValue(1).ToString();
+                }
 
                 dr.Close();
+
 
                 sqlCon.Close();
 
@@ -71,10 +75,18 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
             MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
 
             MySqlDataReader dr = cmd1.ExecuteReader();
-            dr.Read();
-            lbl_faculty_name.Text = dr.GetValue(0).ToString();
-            lbl_hod_name.Text = dr.GetValue(1).ToString();
-            string dept_id = dr.GetValue(2).ToString(); ;
+
+            string dept_id = "";
+
+            if (dr.Read())
+            {
+                dr.Read();
+                lbl_faculty_name.Text = dr.GetValue(0).ToString();
+                lbl_hod_name.Text = dr.GetValue(1).ToString();
+                dept_id = dr.GetValue(2).ToString();
+            }
+
+            
 
             dr.Close();
 

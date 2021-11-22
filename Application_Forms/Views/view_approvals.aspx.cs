@@ -9,16 +9,14 @@ using MySql.Data.MySqlClient;
 
 public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
 {
-    string connectionString = @"Server=localhost;Database=srcd;Uid=root;Pwd=root;";
+    string connectionString = @"Server=localhost;Database=srcd;Uid=root;Pwd=qwaszx@1234;";
     string auth_email = "yash@pilani.bits-pilani.ac.in";
     protected void Page_Load(object sender, EventArgs e)
     {
         
        
             if (!IsPostBack)
-            {
-
-                
+            {                
                 GridFill();
             }
         

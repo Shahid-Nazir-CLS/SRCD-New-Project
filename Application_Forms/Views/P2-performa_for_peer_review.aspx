@@ -166,7 +166,7 @@ fails) </strong>
                             <strong>4.  Any comments on Budget submitted:</strong>
                             <br />
 
-                            <asp:TextBox ID="TextBox7" runat="server" Height="29px" OnTextChanged="TextBox7_TextChanged" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="TextBox7" runat="server" Height="29px" Width="100%"></asp:TextBox>
 &nbsp;</div>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
@@ -219,6 +219,22 @@ Investigator for improving and revising the proposal. If needed add more pages):
                         &nbsp;</td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
+                <tr>
+                    <td style=" height: 15px;">
+                    <div align="right">
+                    <strong>Security Code:&nbsp;<span class="required">*</span></strong>
+
+                    <asp:TextBox ID="txtBox_captcha" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="5%" Height="24px"></asp:TextBox>
+                
+                    <asp:Image ID="imgCaptcha" runat="server" />
+
+                         <br />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtBox_captcha" ErrorMessage="Required" ForeColor="Red" style="margin-right:8%"></asp:RequiredFieldValidator>
+                         <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red" style="margin-right:6%"></asp:Label>
+                    <br />
+                         </div>  
+                    </td>
+                </tr>
                  <tr>
                     <td style=" height: 25px;" align="center"></td>
                     <td align="center" style=" height: 25px;">&nbsp;</td>
@@ -226,9 +242,8 @@ Investigator for improving and revising the proposal. If needed add more pages):
                 <tr>
                     <td style=" height: 15px;">
                         <asp:Button ID="Button1" runat="server" Font-Bold="True" Height="30px" TabIndex="4" Text="Submit" Width="180px" OnClick="Button1_Click" />
-                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         <br />
-                        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                     </td>
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
