@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Personal_Users_MasterPage" %>
+﻿    <%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Personal_Users_MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -52,7 +52,7 @@
 
 
                                         <%--<li><a href="Approved_Budget_Individual.aspx">Approved Budget</a></li> --%>
-                                        <li><a href="Approved_Budget_All.aspx">Dashboard </a></li>
+                                        <li><a href="faculty_show_all.aspx" id="dashboard" runat="server">Dashboard </a></li>
                                         <li>
                                             <a href="javascript:void(0);" id="A1">Manage Approvals</a>
                                             <div class="subNavWrapper">
@@ -60,9 +60,10 @@
                                                     <ul>
                                                         <li>
                                                             <ul>
-                                                                <li><a href="Approval_Instructions_Individual.aspx">New Approval</a></li>
-                                                                <li><a href="View_Individual_Approval_Status_Step4.aspx">Edit Approvals</a></li>
-                                                                <li><a href="View_Individual_Approval_Status_Step1.aspx">View Approval Status</a></li>
+                                                                <li id="new_approval" runat="server"><a href="Links_Page.aspx">New Approval</a></li>
+
+
+                                                                <li id="view_approvals" runat="server"><a href="view_approvals.aspx">View Approval Status</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>

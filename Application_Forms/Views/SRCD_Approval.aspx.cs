@@ -34,8 +34,18 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
 
             System.Data.DataTable dtbl = new System.Data.DataTable();
             sqlDa.Fill(dtbl);
-            gvProduct.DataSource = dtbl;
-            gvProduct.DataBind();
+            if (dtbl != null)
+            {
+                if (dtbl.Rows.Count > 0)
+                {
+                    gvProduct.DataSource = dtbl;
+                    gvProduct.DataBind();
+                }
+                else
+                {
+                    Response.Redirect("no_records_found.aspx");
+                }
+            }
         }
     }
 

@@ -223,7 +223,7 @@
 								<div style="margin-left:50px">
                                 <td style="width: 33%; vertical-align: top">
 									<div style="margin-left:20px">
-                                    <a href="SignIn.aspx" target="_blank" class="myButton1">Department Login</a><br />
+                                    <a href="login_dept.aspx" target="_blank" class="myButton1">Department Login</a><br />
 									</div>
                                 </td>
 								
@@ -231,7 +231,7 @@
 
                                 <td style="width: 33%; vertical-align: top">
 									<div style="margin-left:25px">
-                                    <a href="Individual_Users/SignIn.aspx" target="_blank" class="myButton">Faculty Login</a><br />
+                                    <a href="login.aspx" target="_blank" class="myButton">Faculty Login</a><br />
 									</div>
                                 </td>
 								
@@ -240,7 +240,7 @@
 
 
 
-                                    <a href="Other-Logins.aspx" target="_blank" class="myButton2">Admin Login</a>
+                                    <a href="other_logins.aspx" target="_blank" class="myButton2">Admin Login</a>
                                 </td>
 								</div>
                             </tr>
@@ -264,12 +264,6 @@
 
                             <tr>
                                 <td style="width: 33%; vertical-align: top" colspan="3">
-                                    
-
-                                    <asp:Button ID="btn_faculty" runat="server" Font-Bold="true" Height="28px" TabIndex="7" Text="Faculty" Width="160px" style="margin-left:50px" OnClick="btn_faculty_Click"/>
-                                    <asp:Button ID="btn_hod" runat="server" Font-Bold="true" Height="28px" TabIndex="7" Text="HOD" Width="160px" style="margin-left:50px" OnClick="btn_hod_Click"/>
-                                    <asp:Button ID="btn_srcd" runat="server" Font-Bold="true" Height="28px" TabIndex="7" Text="SRCD" Width="160px" style="margin-left:50px" OnClick="btn_srcd_Click"/>
-                                    <asp:Button ID="btn_assoc_dean" runat="server" Font-Bold="true" Height="28px" TabIndex="7" Text="Assoc. Dean" Width="160px" style="margin-left:50px" OnClick="btn_assoc_dean_Click"/>
 
                                 </td>
                             </tr>

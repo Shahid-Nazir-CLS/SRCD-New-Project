@@ -40,7 +40,7 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
                 using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
                 {
 
-                    string auth_email = "yash@pilani.bits-pilani.ac.in";
+                    string auth_email = Session["email"].ToString();
 
                     sqlCon.Open();
                     MySqlCommand sqlCmd = new MySqlCommand("form1_faculty_add", sqlCon);

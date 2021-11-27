@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="Associate_Dean_Approval.aspx.cs" Inherits="Application_Forms_Views_P4_Approval_of_interview_panel" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="dept_page.aspx.cs" Inherits="Application_Forms_Views_view_approvals" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br />
     <div align="center">
         <table border="0" id="table_user_details" cellpadding="0" width="80%" cellspacing="0">
@@ -21,7 +21,7 @@
                         <td class="head_already" style="height: 30px">
                             <div style="text-align: center">
                                 <span>
-                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Associate Dean Approvals"></asp:Label></span>
+                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Approved Forms"></asp:Label></span>
                             </div>
                         </td>
                     </tr>
@@ -36,6 +36,8 @@
                 <tr>
                     <td style="height: 5px"></td>
                 </tr>
+
+                
 
 
             </tbody>
@@ -58,15 +60,15 @@
                                         <asp:BoundField DataField="form_id" HeaderText="Sr. No" />
                                         <asp:BoundField DataField="form_name" HeaderText="Form Name" />
                                         <asp:BoundField DataField="application_no" HeaderText="Form No" />
-                                        <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" />
                                         <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
-                                        <asp:BoundField DataField="hod_approval_time" HeaderText="HOD Approved On" />
-                                        <asp:BoundField DataField="srcd_approval_time" HeaderText="SRCD Approved On" />
+                                        <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" />
+                                        <asp:BoundField DataField="Hod_Approval" HeaderText="Hod Approval" />
+                                        <asp:BoundField DataField="srcd_Approval" HeaderText="Srcd Approval" />
+                                        <asp:BoundField DataField="associate_dean_Approval" HeaderText="Associate Dean Approval" />
 
-
-                                        <asp:TemplateField HeaderText="Action">
+                                         <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="Approve / Reject" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="Print" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 
@@ -86,7 +88,7 @@
                         <td style="height: 10px;" colspan="2"></td>
                     </tr>
 
-                  
+
 
                     <tr>
                         <td style="height: 30px;" colspan="2"></td>

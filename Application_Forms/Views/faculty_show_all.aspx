@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="Associate_Dean_Approval.aspx.cs" Inherits="Application_Forms_Views_P4_Approval_of_interview_panel" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="faculty_show_all.aspx.cs" Inherits="Application_Forms_Views_P4_Approval_of_interview_panel" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <br />
@@ -17,14 +17,13 @@
         <div align="center">
             <table border="0" id="table_attendance_details" cellpadding="0" width="95%" cellspacing="0">
                 <tbody>
-                    <tr valign="top">
-                        <td class="head_already" style="height: 30px">
-                            <div style="text-align: center">
-                                <span>
-                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Associate Dean Approvals"></asp:Label></span>
-                            </div>
-                        </td>
-                    </tr>
+                   <tr valign="top">
+                    <td class="head_already" style="height: 30px">
+                        <div style="text-align: center">
+                            <span>&nbsp;<span style="text-decoration: none">Approved Projects</span></span>
+                        </div>
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -35,6 +34,17 @@
 
                 <tr>
                     <td style="height: 5px"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div align="left" style="margin-left: 2px">
+                            <asp:Label ID="lbl_faculty_heading" runat="server" Font-Bold="true" class="head_already" Font-Size="18px" Text="Faculty Name :"></asp:Label>
+                            <asp:Label ID="lbl_faculty_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="Faculty Name"></asp:Label>&nbsp;&nbsp;
+                            <asp:Label ID="lbl_department_heading" runat="server" Font-Bold="true" class="head_already" Font-Size="18px" Text="Department :"></asp:Label>
+                            <asp:Label ID="lbl_hod_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="Department Name"></asp:Label>
+                        </div>
+                    </td>
                 </tr>
 
 
@@ -58,15 +68,12 @@
                                         <asp:BoundField DataField="form_id" HeaderText="Sr. No" />
                                         <asp:BoundField DataField="form_name" HeaderText="Form Name" />
                                         <asp:BoundField DataField="application_no" HeaderText="Form No" />
-                                        <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" />
                                         <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
-                                        <asp:BoundField DataField="hod_approval_time" HeaderText="HOD Approved On" />
-                                        <asp:BoundField DataField="srcd_approval_time" HeaderText="SRCD Approved On" />
 
 
                                         <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="Approve / Reject" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="View Approved Form" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 
@@ -76,7 +83,6 @@
                                     <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
                                     <HeaderStyle BackColor="#008080" Font-Bold="True" ForeColor="white" HorizontalAlign="Center" VerticalAlign="Middle" BorderColor="#008080" BorderWidth="1px" />
                                     <EditRowStyle BackColor="#2461BF" />
-                                    <%--<AlternatingRowStyle BackColor="White" HorizontalAlign="center" VerticalAlign="middle" BorderColor="#008080" />--%>
                                 </asp:GridView>
                             </div>
                         </td>
@@ -86,7 +92,7 @@
                         <td style="height: 10px;" colspan="2"></td>
                     </tr>
 
-                  
+
 
                     <tr>
                         <td style="height: 30px;" colspan="2"></td>

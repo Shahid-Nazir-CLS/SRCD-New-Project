@@ -27,15 +27,15 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
         {
             using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
             {
+                string auth_email = Session["email"].ToString();
 
-                string auth_email = "hod.csis@pilani.bits-pilani.ac.in";
 
                 sqlCon.Open();
 
 
                 // get the details of the faulty using 
 
-                string query1 = "Select hod, dept_name, dept_id from dept where dept_email = '" + auth_email + "'";
+                string query1 = "Select faculty_name, faculty_dept from faculty where email_id = '" + auth_email + "'";
 
                 MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
 
@@ -44,7 +44,7 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
                 {
                     dr.Read();
                     lbl_faculty_name.Text = dr.GetValue(0).ToString();
-                    lbl_hod_name.Text = dr.GetValue(1).ToString();
+                    lbl_department_heading.Text = dr.GetValue(1).ToString();
                 }
 
                 dr.Close();
@@ -70,29 +70,24 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
 
             // get the details of the faulty using 
 
-            string query1 = "Select hod, dept_name, dept_id from dept where dept_email = '" + auth_email + "'";
+            string query1 = "Select faculty_name from faculty where email_id = '" + auth_email + "'";
 
             MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
 
             MySqlDataReader dr = cmd1.ExecuteReader();
 
-            string dept_id = "";
+            string username = "";
 
             if (dr.Read())
             {
                 dr.Read();
-                lbl_faculty_name.Text = dr.GetValue(0).ToString();
-                lbl_hod_name.Text = dr.GetValue(1).ToString();
-                dept_id = dr.GetValue(2).ToString();
+                username = dr.GetValue(0).ToString();
             }
-
-
-            
 
             dr.Close();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on from approvals where is_Hod_Approval_Required='yes' and Hod_Approval='Pending' and dept_id = '" + dept_id + "'";
+            cmd.CommandText = "Select form_id, form_name, application_no, submitted_on from approvals where approved = 'Approved' and submitted_by = '" + username + "'";
             cmd.Connection = sqlCon;
 
             MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -101,7 +96,7 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
             System.Data.DataTable dtbl = new System.Data.DataTable();
             sqlDa.Fill(dtbl);
 
-            if (dtbl != null)
+            if(dtbl != null)
             {
                 if (dtbl.Rows.Count > 0)
                 {
@@ -122,7 +117,7 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
         int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
         string app_No = "" + app_Number;
 
-        Response.Redirect("P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx?App_No=" + app_No);
+        Response.Redirect("P1_view_form.aspx?App_No=" + app_No);
 
     }
 }

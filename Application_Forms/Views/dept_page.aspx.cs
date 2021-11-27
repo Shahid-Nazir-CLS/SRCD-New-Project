@@ -41,7 +41,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
 
                 dr.Close();
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_Hod_Approval_Required='yes' and Hod_Approval = 'Approved' and dept_id = '" + dept_id + "'";
+                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where dept_id = '" + dept_id + "'";
                 cmd.Connection = sqlCon;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -59,7 +59,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
             else if (Session["user_type"].ToString() == "srcd")
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_SrcdDean_Approval_Required ='yes' and srcd_Approval = 'Approved'";
+                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals";
                 cmd.Connection = sqlCon;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -75,7 +75,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
             else if (Session["user_type"].ToString() == "assoc_dean")
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_SrcdAssoDean_Required ='yes' and associate_dean_Approval = 'Approved'";
+                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals";
                 cmd.Connection = sqlCon;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -89,24 +89,21 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
             else
             {
 
-                string query1 = "Select faculty_name from faculty where email_id = '" + auth_email + "'";
+                string query1 = "Select dept_id from faculty where email_id = '" + auth_email + "'";
 
                 MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
 
                 MySqlDataReader dr = cmd1.ExecuteReader();
                 dr.Read();
 
-                string username = dr.GetValue(0).ToString(); ;
+                string dept_id = dr.GetValue(0).ToString(); ;
 
                 dr.Close();
 
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where submitted_by = '" + username + "'";
+                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where dept_id = '" + dept_id + "'";
                 cmd.Connection = sqlCon;
-
-                //submitted_by_field.Visible = false;
-                gvProduct.Columns[3].Visible = false;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
                 sqlDa.SelectCommand = cmd;

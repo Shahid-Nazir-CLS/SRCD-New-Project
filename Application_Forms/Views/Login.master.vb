@@ -1,28 +1,16 @@
 ﻿
-Partial Class Personal_Users_MasterPage
+Partial Class login
     Inherits System.Web.UI.MasterPage
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-
-
-        If (Session("user_type") <> "faculty") Then
-            new_approval.Visible = False
-        End If
-
-        If (Session("user_type") = "hod") Then
-            dashboard.HRef = "HOD_Approval.aspx"
-        End If
-
-        If (Session("user_type") = "srcd") Then
-            dashboard.HRef = "SRCD_Approval.aspx"
-        End If
-
-        If (Session("user_type") = "assoc_dean") Then
-            dashboard.HRef = "Associate_Dean_Approval.aspx"
-        End If
-
-
+        'If Session("Email") Is Nothing Then
+        '    '  Response.Redirect("~/Login.aspx")
+        '    Session.Abandon()
+        '    Response.Redirect("../SessionExpire.aspx")
+        'Else
+        '    lbl_current_date.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy")
+        'End If
 
         ''Get Client IP Address
         'Dim ipaddress As String
@@ -35,8 +23,8 @@ Partial Class Personal_Users_MasterPage
 
         'Dim user_type As String = Session("approval_User_Type")
 
-        'If user_type = "Admin" Then
-        '    div_user_type.Visible = True
+        ''If user_type = "Admin" Then
+        ''    div_user_type.Visible = True
 
         ''ElseIf user_type = "User" Then
         ''    div_user_type.Visible = False
