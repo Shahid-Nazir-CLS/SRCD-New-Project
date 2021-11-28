@@ -172,7 +172,6 @@
                 <div class="logoWrapper">
                     <a href="index.aspx" class="logo">
                         <img src="Images/BITS_Pilani_campus_logo.gif" alt="BITS Pilani Pilani Campus" />
-
                     </a>
 
                 </div>

@@ -1,19 +1,68 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P1_view_form.aspx.cs" Inherits="P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="P1_print_form.aspx.cs" Inherits="Individual_Users_PopUp_Webpages_Print_Form_A_Travel" %>
 
+<!DOCTYPE html>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css" />
+    <link type="text/css" href="../css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="../css/module.css" rel="stylesheet" />
+    <link type="text/css" href="../css/main.css" rel="stylesheet" />
+    <style type="text/css" media="print">
+        @page {
+            size: auto; /* auto is the initial value */
+            /* margin: 0mm 0mm  15mm 0;  /* this affects the margin in the printer settings */
+            margin: 10mm 0 10mm 0;
+        }
+    </style>
+    <script language="javascript">
+        function printDiv(Atul) {
+            var printContents = document.getElementById(Atul).innerHTML;
+            var originalContents = document.body.innerHTML;
 
-     <script type="text/javascript">
-         function basicPopup() {
-             popupWindow = window.open("P1_print_form.aspx", 'popUpWindow', 'height=300,width=600,left=100,top=30,resizable=No,scrollbars=No,toolbar=no,menubar=no,location=no,directories=no, status=No');
-         }
-     </script>
+            document.body.innerHTML = printContents;
 
-    <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
-        <tbody>
-            <tr>
+            window.print();
+
+            document.body.innerHTML = originalContents;
+        }
+
+    </script>
+    <style>
+        @media print {
+            @page {
+                margin: 0;
+            }
+
+            body {
+                margin: 1.6cm;
+            }
+        }
+    </style>
+</head>
+<body onload="window.print();">
+    <form id="form1" runat="server">
+        <div id="Atul">
+
+            <div id="main_output_div" runat="server">
+
+                <%-- <table>
+                <tr>
+                    <td style="height: 40px"></td>
+                </tr>
+            </table>--%>
+                <div align="center">
+
+                    <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="height: 55px; border: 0px solid black">
+                        <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="height: 55px; border: 0px solid black">
+                        <tbody>
+
+                             <tr>
                 <td colspan="3" style="height: 15px;" align="center">
                     <div>
+                        <br />
+                        <br />
                         <span style="font-size: 20px; color: black"><strong>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI</strong></span>
                     </div>
                 </td>
@@ -284,29 +333,19 @@
             <tr>
                 <td>
                     <br />
-                    <br />
                 </td>
             </tr>
-
-            
             <tr>
                 <td colspan="3" style="height: 15px;">
                     <div align="right" style="margin-right: 20px">
                         
-                        <asp:Button ID="HOD_approve" runat="server" Text="Print" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="Print" />
-
-                        <asp:Button ID="Button2" runat="server" Text="Print" OnClientClick="basicPopup()" />
-                                               
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </td>
             </tr>
 
             <tr>
                 <td colspan="3" style="height: 15px;" align="center">
-                    <asp:Label Text="" ID="lbl_success" runat="server" />
                     <br />
-                    <asp:Label Text="" ID="lbl_error" runat="server" />
                 </td>
             </tr>
             
@@ -314,7 +353,17 @@
                 <td style="height: 25px;" align="center"></td>
                 <td align="center" style="height: 25px;">&nbsp;</td>
             </tr>
-        </tbody>
-    </table>
-</asp:Content>
+                            
+                        </tbody>
+                    </table>
+                    </table>
 
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+    </form>
+
+</body>
+</html>
