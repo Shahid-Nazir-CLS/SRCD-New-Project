@@ -17,7 +17,9 @@ public partial class P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL : Sy
 
         showHODDetails();
 
-        
+        app_no_lbl.Text = Request.QueryString["App_No"];
+
+
     }
 
     

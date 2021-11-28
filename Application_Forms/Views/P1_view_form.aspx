@@ -5,7 +5,8 @@
 
      <script type="text/javascript">
          function basicPopup() {
-             popupWindow = window.open("P1_print_form.aspx", 'popUpWindow', 'height=300,width=600,left=100,top=30,resizable=No,scrollbars=No,toolbar=no,menubar=no,location=no,directories=no, status=No');
+             popupWindow = window.open("P1_print_form.aspx?App_No=" + document.getElementById('<%= app_no_lbl.ClientID%>').innerText, 'popUpWindow', 'height=300,width=600,left=100,top=30,resizable=No,scrollbars=No,toolbar=no,menubar=no,location=no,directories=no, status=No');
+             console.log(document.getElementById('<%= app_no_lbl.ClientID%>').innerText);
          }
      </script>
 
@@ -31,7 +32,9 @@
                 <td align="center" style="height: 15px;">&nbsp;</td>
             </tr>
             <tr>
-                <td colspan="3" style="height: 15px;" align="center"></td>
+                <td colspan="3" style="height: 15px;" align="center">
+                    <asp:Label Text="text" runat="server" Visible="true" ID="app_no_lbl"/>
+                </td>
             </tr>
 
 

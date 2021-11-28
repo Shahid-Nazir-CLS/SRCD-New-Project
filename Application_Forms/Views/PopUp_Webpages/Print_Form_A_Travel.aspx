@@ -39,6 +39,12 @@
                 margin: 1.6cm;
             }
         }
+        .auto-style1 {
+            height: 10px;
+        }
+        .auto-style2 {
+            height: 22px;
+        }
     </style>
 </head>
 <body onload="window.print();">
@@ -610,10 +616,10 @@
                                                         </tr>
 
                                                         <tr>
-                                                            <td style="height: 10px"></td>
+                                                            <td class="auto-style1"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>
+                                                            <td class="auto-style2">
                                                                 <div align="left">
                                                                     <span style="color: black; font-size: 13px"><strong><span>
                                                                         <asp:Label ID="lbl_HOD_Signature" runat="server"></asp:Label></span></strong></span>
@@ -631,7 +637,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>
+                                                            <td class="auto-style2">
                                                                 <div align="left">
                                                                     <span style="color: black; font-size: 13px"><strong>(Head of Department) </strong></span>
                                                                 </div>
@@ -650,7 +656,7 @@
                                                         </tr>
 
                                                         <tr>
-                                                            <td style="height: 10px"></td>
+                                                            <td class="auto-style1"></td>
                                                         </tr>
                                                         <tr>
                                                             <td>

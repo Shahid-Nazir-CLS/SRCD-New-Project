@@ -75,7 +75,7 @@
 
                                         <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="Approve / Reject" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="Approve / Reject" ID="lnkSelect" CommandArgument='<%# Eval("form_id") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 
