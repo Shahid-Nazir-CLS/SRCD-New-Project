@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="P11-Project_Fellow_Selection_Committee_Report.aspx.cs" Inherits="Application_Forms_Views_P11_Project_Fellow_Selection_Committee_Report" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-   <p>
+    <p>
         <br />
     </p>
     <meta charset="utf-8" />
@@ -37,60 +37,7 @@
     </span></b>
             <br />
             <meta charset="utf-8" />
-            <b id="docs-internal-guid-6eeae67f-7fff-62a5-5b31-7bc2cd0583e8" style="font-weight:normal;">Project Title :<br />
-            (a)Start Date :<br />
-            (b)End Date:<br />
-            <br />
-            <meta charset="utf-8" />
-            <b id="docs-internal-guid-09ec7437-7fff-f973-7490-356d4ba5017e" style="font-weight:normal;">Name of Selection Committee members:<br />
-            (a)<b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac35" style="font-weight:normal;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac36" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac37" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332063" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac38" style="font-weight:normal;"><b id="docs-internal-guid-a82f9002-7fff-b1e9-b958-3c3346fa8563" style="font-weight:normal;"><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-            </b></b>
-            </b></b></b>
-
-    </span></b>
-            <b id="docs-internal-guid-9e0af851-7fff-71af-3529-334bf50b68d8" style="font-weight:normal;">Head of Department or his nominee<br />
-            (b)<meta charset="utf-8" /><b id="docs-internal-guid-8b9af53f-7fff-f1b7-5f6c-0e75fe86a120" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac39" style="font-weight:normal;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac40" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac41" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332064" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac42" style="font-weight:normal;"><b id="docs-internal-guid-a82f9002-7fff-b1e9-b958-3c3346fa8564" style="font-weight:normal;"><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-            </b></b>
-            </b></b></b>
-
-    </span></b>
-            Principal Investigator</b><br />
-            (c)<meta charset="utf-8" /><b id="docs-internal-guid-d71b7bed-7fff-27b8-fa2d-43bd892f32f3" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac43" style="font-weight:normal;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac44" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac45" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332065" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac46" style="font-weight:normal;"><b id="docs-internal-guid-a82f9002-7fff-b1e9-b958-3c3346fa8565" style="font-weight:normal;"><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-            </b></b>
-            </b></b></b>
-
-    </span></b>
-            DRC Convener (if applicable)</b><br />
-            (d)<b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac47" style="font-weight:normal;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac48" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac49" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332066" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac50" style="font-weight:normal;"><b id="docs-internal-guid-a82f9002-7fff-b1e9-b958-3c3346fa8566" style="font-weight:normal;"><asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
-            </b></b>
-            </b></b></b>
-
-    </span></b>
-            <meta charset="utf-8" />
-            <b id="docs-internal-guid-61b4064b-7fff-4bb8-c59e-3f1ee5d984f1" style="font-weight:normal;">Subject Expert (Internal)</b><br />
-            (e)<meta charset="utf-8" /><b id="docs-internal-guid-85f5490a-7fff-76dd-95b4-610a992d48be" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac51" style="font-weight:normal;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac52" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac53" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332067" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac54" style="font-weight:normal;"><b id="docs-internal-guid-a82f9002-7fff-b1e9-b958-3c3346fa8567" style="font-weight:normal;"><asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
-            </b></b>
-            </b></b></b>
-
-    </span></b>
-            Subject Expert (External)</b></b><br />
-            <br />
-            <meta charset="utf-8" />
-            <b id="docs-internal-guid-1b0cac7b-7fff-3c03-262f-e1c10ca2224f" style="font-weight:normal;">Copy of Committee Approval from Associate Dean (SRCD) for project position(s) attached:&nbsp; <strong __designer:mapid="79">
-                            <asp:CheckBoxList ID="CheckBoxList4" runat="server" OnSelectedIndexChanged="CheckBoxList4_SelectedIndexChanged">
-                                <asp:ListItem Selected="True">Yes</asp:ListItem>
-                                <asp:ListItem>No</asp:ListItem>
-                            </asp:CheckBoxList>
-                            </strong>
-                        <br />
-            <b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac55" style="font-weight:normal;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">
-            <b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac56" style="font-weight:normal;">
-        <b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac57" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332068" style="font-weight:normal;"><b id="docs-internal-guid-6eeae67f-7fff-62a5-5b31-7bc2cd0583e9" style="font-weight: normal;"><b id="docs-internal-guid-09ec7437-7fff-f973-7490-356d4ba5017e0" style="font-weight: normal;"><b id="docs-internal-guid-1b0cac7b-7fff-3c03-262f-e1c10ca2224f0" style="font-weight: normal;">(Specify)<br />
-            </b>
-            <asp:FileUpload ID="FileUpload1" runat="server" />
-            </b></b></b></b></b>
-
-    </span></b>
+            <b id="docs-internal-guid-6eeae67f-7fff-62a5-5b31-7bc2cd0583e8" style="font-weight:normal;"><b id="docs-internal-guid-09ec7437-7fff-f973-7490-356d4ba5017e" style="font-weight:normal;"><b id="docs-internal-guid-1b0cac7b-7fff-3c03-262f-e1c10ca2224f" style="font-weight:normal;">
             <br />
             <meta charset="utf-8" />
             <b id="docs-internal-guid-2b67ceae-7fff-bccb-ccd4-d71fcc097656" style="font-weight:normal;">Name of candidate(s) appeared before the selection committee:
@@ -134,7 +81,7 @@
             <br />
             <meta charset="utf-8" />
             Copy of Committee Approval from Associate Dean (SRCD) for project position(s) attached:&nbsp; <strong __designer:mapid="79">
-                            <asp:CheckBoxList ID="CheckBoxList5" runat="server" OnSelectedIndexChanged="CheckBoxList4_SelectedIndexChanged">
+                            <asp:CheckBoxList ID="CheckBoxList5" runat="server">
                                 <asp:ListItem Selected="True">Yes</asp:ListItem>
                                 <asp:ListItem>No</asp:ListItem>
                             </asp:CheckBoxList>
@@ -192,7 +139,7 @@
             <meta charset="utf-8" />
             Copy of Committee Approval from Associate Dean (SRCD) for project position(s) attached:&nbsp; <strong __designer:mapid="79">
             <br />
-                            <asp:CheckBoxList ID="CheckBoxList6" runat="server" OnSelectedIndexChanged="CheckBoxList4_SelectedIndexChanged" TextAlign="Left">
+                            <asp:CheckBoxList ID="CheckBoxList6" runat="server" TextAlign="Left">
                                 <asp:ListItem Selected="True">Yes</asp:ListItem>
                                 <asp:ListItem>No</asp:ListItem>
                             </asp:CheckBoxList>
@@ -246,13 +193,17 @@
             Subject Expert (External)</b></b><br />
             <br />
             <meta charset="utf-8" />
-            Copy of Committee Approval from Associate Dean (SRCD) for project position(s) attached:&nbsp; <strong __designer:mapid="79">
+            Copy of Committee Approval from Associate Dean (SRCD) for project position(s) attached:&nbsp; 
+            <div style="margin: 100px">
+            
             <br />
-                            <asp:CheckBoxList ID="CheckBoxList7" runat="server" OnSelectedIndexChanged="CheckBoxList4_SelectedIndexChanged" TextAlign="Left">
+                
+                            <asp:CheckBoxList ID="CheckBoxList7" runat="server" >
                                 <asp:ListItem Selected="True">Yes</asp:ListItem>
                                 <asp:ListItem>No</asp:ListItem>
                             </asp:CheckBoxList>
-                            </strong><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac140" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac141" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac142" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332089" style="font-weight:normal;"><b id="docs-internal-guid-6eeae67f-7fff-62a5-5b31-7bc2cd0583e15" style="font-weight: normal;"><b id="docs-internal-guid-09ec7437-7fff-f973-7490-356d4ba5017e6" style="font-weight: normal;"><b id="docs-internal-guid-1b0cac7b-7fff-3c03-262f-e1c10ca2224f6" style="font-weight: normal;">(Specify)<br />
+                    </div>
+                            <b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac140" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac141" style="font-weight:normal;"><b id="docs-internal-guid-126b5565-7fff-970d-5319-baa3b025ac142" style="font-weight:normal;"><b id="docs-internal-guid-64a45891-7fff-2e77-695e-903b11332089" style="font-weight:normal;"><b id="docs-internal-guid-6eeae67f-7fff-62a5-5b31-7bc2cd0583e15" style="font-weight: normal;"><b id="docs-internal-guid-09ec7437-7fff-f973-7490-356d4ba5017e6" style="font-weight: normal;"><b id="docs-internal-guid-1b0cac7b-7fff-3c03-262f-e1c10ca2224f6" style="font-weight: normal;">(Specify)<br />
             </b>
             <asp:FileUpload ID="FileUpload4" runat="server" />
             </b></b></b></b></b></b>

@@ -4,7 +4,7 @@ Partial Class Personal_Users_MasterPage
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-
+        lbl_current_date.Text = DateTime.Now.ToString()
 
         If (Session("user_type") <> "faculty") Then
             new_approval.Visible = False

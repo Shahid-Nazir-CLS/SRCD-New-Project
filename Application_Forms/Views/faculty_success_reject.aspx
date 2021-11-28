@@ -41,7 +41,7 @@
 
                                     <br />
 
-                                    <span style="font-size: 18px"><strong><a href="View_Individual_Approval_Status_Step1.aspx">Click here to view the approval status</a></strong></span>
+                                  
 
                                 </td>
                             </tr>

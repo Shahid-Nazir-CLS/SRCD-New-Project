@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="dept_page.aspx.cs" Inherits="Application_Forms_Views_view_approvals" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Application_Forms/Views/MasterPage.master" AutoEventWireup="true" CodeFile="PI Approval.aspx.cs" Inherits="Application_Forms_Views_PI_Approval" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <br />
     <div align="center">
         <table border="0" id="table_user_details" cellpadding="0" width="80%" cellspacing="0">
@@ -21,7 +21,7 @@
                         <td class="head_already" style="height: 30px">
                             <div style="text-align: center">
                                 <span>
-                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Approved Forms"></asp:Label></span>
+                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Faculty Approvals"></asp:Label></span>
                             </div>
                         </td>
                     </tr>
@@ -37,7 +37,16 @@
                     <td style="height: 5px"></td>
                 </tr>
 
-                
+                <tr>
+                    <td>
+                        <div align="left" style="margin-left: 2px">
+                            <asp:Label ID="lbl_faculty_heading" runat="server" Font-Bold="true" class="head_already" Font-Size="18px" Text="HOD :"></asp:Label>
+                            <asp:Label ID="lbl_faculty_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="HOD Name"></asp:Label>&nbsp;&nbsp;
+                            <asp:Label ID="lbl_department_heading" runat="server" Font-Bold="true" class="head_already" Font-Size="18px" Text="Department :"></asp:Label>
+                            <asp:Label ID="lbl_hod_name" runat="server" Font-Bold="true" ForeColor="Blue" Font-Size="18px" Text="Department Name"></asp:Label>
+                        </div>
+                    </td>
+                </tr>
 
 
             </tbody>
@@ -57,34 +66,26 @@
                                 <asp:GridView ID="gvProduct" runat="server" Width="100%" CellSpacing="3" CellPadding="5" AutoGenerateColumns="False" BorderColor="#008080" BorderStyle="Solid" BorderWidth="1px">
                                     <Columns>
 
-                                        <asp:TemplateField HeaderText="Sr No">
-                                            <ItemTemplate>
-                                                <%#Container.DataItemIndex+1  %>
-                                            </ItemTemplate>
-                                        </asp:TemplateField>
-
+                                        <asp:BoundField DataField="form_id" HeaderText="Sr. No" />
                                         <asp:BoundField DataField="form_name" HeaderText="Form Name" />
-                                       <%-- <asp:BoundField DataField="application_no" HeaderText="Form No" />--%>
-                                        <asp:BoundField DataField="form_id" HeaderText="Application. No" />
-                                        <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
+                                        <asp:BoundField DataField="application_no" HeaderText="Form No" />
                                         <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" />
-                                        <asp:BoundField DataField="Hod_Approval" HeaderText="Hod Approval" />
-                                        <asp:BoundField DataField="srcd_Approval" HeaderText="Srcd Approval" />
-                                        <asp:BoundField DataField="associate_dean_Approval" HeaderText="Associate Dean Approval" />
+                                        <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
 
-                                         <asp:TemplateField HeaderText="Action">
+
+                                        <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="Print" ID="lnkSelect" CommandArgument='<%# Eval("form_id") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="Approve / Reject" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 
                                     </Columns>
-                                    <PagerStyle ForeColor="Black" HorizontalAlign="Center" BorderColor="#008080" BackColor="WhiteSmoke" Font-Bold="True" Font-Size="Medium" BorderStyle="Solid" BorderWidth="1px"></PagerStyle>
+                                    <%--<PagerStyle ForeColor="Black" HorizontalAlign="Center" BorderColor="#008080" BackColor="WhiteSmoke" Font-Bold="True" Font-Size="Medium" BorderStyle="Solid" BorderWidth="1px"></PagerStyle>
                                     <EmptyDataTemplate>No records found.</EmptyDataTemplate>
                                     <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
                                     <HeaderStyle BackColor="#008080" Font-Bold="True" ForeColor="white" HorizontalAlign="Center" VerticalAlign="Middle" BorderColor="#008080" BorderWidth="1px" />
                                     <EditRowStyle BackColor="#2461BF" />
-                                    <%--<AlternatingRowStyle BackColor="White" HorizontalAlign="center" VerticalAlign="middle" BorderColor="#008080" />--%>
+                                    <AlternatingRowStyle BackColor="White" HorizontalAlign="center" VerticalAlign="middle" BorderColor="#008080" />--%>
                                 </asp:GridView>
                             </div>
                         </td>
@@ -104,4 +105,5 @@
         </div>
         <br />
 </asp:Content>
+
 

@@ -62,7 +62,7 @@
 
                                     </td>
                                    
-                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 246px;">
+                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 200px;">
                                         <div>
                                             <span style="font-size: 12px; color: black;">
                                                 <strong>Project No./Sanction No.</strong></span>
@@ -85,7 +85,7 @@
 
                                     </td>
                                    
-                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 246px;">
+                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 200px;">
                                         <div>
                                             <span style="font-size: 12px; color: black;">
                                                 <strong>Name and Department of PI</strong></span>
@@ -100,7 +100,7 @@
 
                                     </tr>
                                 <tr align="left">
-                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 40px;"colspan="1">
+                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 40px; height: 43px;"colspan="1">
                                         <div>
                                             <span style="font-size: 12px; color: black;">
                                                 <strong>3</strong></span>
@@ -108,14 +108,14 @@
 
                                     </td>
                                    
-                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 246px;"colspan="1">
+                                     <td style="border: 1px solid Black; border-collapse: collapse; background: #F4F4F4; width: 200px; height: 43px;"colspan="1">
                                         <div>
                                             <span style="font-size: 12px; color: black;">
                                                 <strong>Funding Agency</strong></span>
                                         </div>
 
                                     </td>
-                                    <td style="border: 1px solid Black; border-collapse: collapse;">
+                                    <td style="border: 1px solid Black; border-collapse: collapse; height: 43px;">
                                         <asp:TextBox ID="TextBox3" runat="server" autocomplete="off" CssClass="txt" Font-Bold="true" ForeColor="Black" Font-Size="12px" Width="99%" Height="24px"></asp:TextBox>
                                     </td>
                                    

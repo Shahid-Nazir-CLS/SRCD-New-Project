@@ -56,10 +56,13 @@
                             <div align="center">
                                 <asp:GridView ID="gvProduct" runat="server" Width="100%" CellSpacing="3" CellPadding="5" AutoGenerateColumns="False" BorderColor="#008080" BorderStyle="Solid" BorderWidth="1px">
                                     <Columns>
-
-                                        <asp:BoundField DataField="form_id" HeaderText="Sr. No" />
+                                         <asp:TemplateField HeaderText="Sr No">
+                                            <ItemTemplate>
+                                                <%#Container.DataItemIndex+1  %>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
                                         <asp:BoundField DataField="form_name" HeaderText="Form Name" />
-                                        <asp:BoundField DataField="application_no" HeaderText="Form No" />
+                                        <asp:BoundField DataField="application_no" HeaderText="Application. No" />
                                         <asp:BoundField DataField="submitted_by" HeaderText="Submitted By"  Visible="true" runat="server"/>
                                         <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
                                         <asp:BoundField DataField="Hod_Approval" HeaderText="Hod Approval" />
