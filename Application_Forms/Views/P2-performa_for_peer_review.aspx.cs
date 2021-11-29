@@ -48,7 +48,7 @@ public partial class Application_Forms_Views_P2_performa_for_peer_review : Syste
                 using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
                 {
 
-                    string auth_email = "yash@pilani.bits-pilani.ac.in";
+                    string auth_email = Session["email"].ToString();
 
                     sqlCon.Open();
                     string query1 = "Select dept_id, faculty_name from faculty where email_id = '" + auth_email + "'";
