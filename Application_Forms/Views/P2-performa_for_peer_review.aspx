@@ -4,23 +4,17 @@
     
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <br />
-    <asp:Panel ID="Panel1" runat="server" Height="1131px">
+    <asp:Panel ID="Panel1" runat="server" Height="1221px">
         <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
             <tbody>
                 <tr>
-                    <td style=" height: 30px;" align="center"></td>
-                    <td align="center" style=" height: 30px;">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style=" height: 15px;">
-                        <div align="right" style="margin-right:20px">
-                            &nbsp;</div>
-                    </td>
-                    <td style=" height: 15px;">&nbsp;</td>
-                </tr>
-                <tr>
                     <td style=" height: 15px;" align="center">
                         <div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                                <br />
                             <span style="font-size:20px;color:black"><strong>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI</strong></span>
                         </div>
                     </td>
@@ -241,7 +235,13 @@ Investigator for improving and revising the proposal. If needed add more pages):
                 </tr>
                 <tr>
                     <td style=" height: 15px;">
-                        <asp:Button ID="Button1" runat="server" Font-Bold="True" Height="30px" TabIndex="4" Text="Submit" Width="180px" OnClick="Button1_Click" />
+                        <div align="center">
+
+                        <asp:Button ID="Button1" runat="server" Text="Submit" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="Button1_Click" />
+
+                        <br />
+                        <br />
+                    </div>
                         <br />
                         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                     </td>

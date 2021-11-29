@@ -105,6 +105,7 @@ public partial class Application_Forms_Views_P2_performa_for_peer_review : Syste
                     sqlCmd.Parameters.AddWithValue("_srcd_Approval", "N/A");
                     sqlCmd.Parameters.AddWithValue("_associate_dean_Approval", "N/A");
                     sqlCmd.Parameters.AddWithValue("_dept_id", dept_id);
+                    sqlCmd.Parameters.AddWithValue("_approved", "Approved");
                     sqlCmd.ExecuteNonQuery();
                     Response.Redirect("faculty_success_submit.aspx");
                     sqlCon.Close();

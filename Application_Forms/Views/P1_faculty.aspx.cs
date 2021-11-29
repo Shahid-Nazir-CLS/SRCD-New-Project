@@ -99,6 +99,7 @@ public partial class Application_Forms_Views_Default : System.Web.UI.Page
                     sqlCmd.Parameters.AddWithValue("_srcd_Approval", "Pending");
                     sqlCmd.Parameters.AddWithValue("_associate_dean_Approval", "Pending");
                     sqlCmd.Parameters.AddWithValue("_dept_id", dept_id);
+                    sqlCmd.Parameters.AddWithValue("_approved", "Approved");
                     sqlCmd.ExecuteNonQuery();
 
                     Response.Redirect("faculty_success_submit.aspx");

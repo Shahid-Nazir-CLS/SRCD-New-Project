@@ -122,7 +122,29 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
         int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
         string app_No = "" + app_Number;
 
-        Response.Redirect("P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx?App_No=" + app_No);
+        using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
+        {
+            sqlCon.Open();
+
+            string query1 = "Select form_no from approvals where form_id = " + app_No;
+
+            MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
+
+            MySqlDataReader dr = cmd1.ExecuteReader();
+            dr.Read();
+
+            string form_no = dr.GetValue(0).ToString();
+
+            dr.Close();
+
+            if(form_no == "1")
+            {
+                Response.Redirect("P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx?App_No=" + app_No);
+            }
+            
+        }
+
+        
 
     }
 }

@@ -117,7 +117,24 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
         int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
         string app_No = "" + app_Number;
 
-        Response.Redirect("P1_view_form.aspx?App_No=" + app_No);
+        using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
+        {
+            sqlCon.Open();
+
+            string query1 = "Select form_no from approvals where form_id = " + app_No;
+
+            MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
+
+            MySqlDataReader dr = cmd1.ExecuteReader();
+            dr.Read();
+
+            string form_no = dr.GetValue(0).ToString(); ;
+
+            dr.Close();
+
+
+            Response.Redirect("P" + form_no + "_view_form.aspx?App_No=" + app_No);
+        }
 
     }
 }

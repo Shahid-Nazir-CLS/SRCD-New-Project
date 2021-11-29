@@ -46,7 +46,7 @@ public partial class P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT : System.Web.
                 using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
                 {
 
-                    string auth_email = "yash@pilani.bits-pilani.ac.in";
+                    string auth_email = Session["email"].ToString();
 
                     sqlCon.Open();
                     string query1 = "Select dept_id, faculty_name from faculty where email_id = '" + auth_email + "'";
@@ -105,6 +105,7 @@ public partial class P3_ADVERTISEMENT_OF_RESEARCH_STAFF_IN_PROJECT : System.Web.
                     sqlCmd.Parameters.AddWithValue("_srcd_Approval", "N/A");
                     sqlCmd.Parameters.AddWithValue("_associate_dean_Approval", "N/A");
                     sqlCmd.Parameters.AddWithValue("_dept_id", dept_id);
+                    sqlCmd.Parameters.AddWithValue("_approved", "Approved");
                     sqlCmd.ExecuteNonQuery();
 
 

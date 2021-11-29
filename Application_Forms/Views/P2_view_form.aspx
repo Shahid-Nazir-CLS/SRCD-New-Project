@@ -8,23 +8,18 @@
          }
      </script>
      <br />
-    <asp:Panel ID="Panel1" runat="server" Height="1131px">
+    <asp:Panel ID="Panel1" runat="server" Height="1221px">
         <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 90%; height: 55px; border: 1px solid black">
             <tbody>
-                <tr>
-                    <td style=" height: 30px;" align="center"></td>
-                    <td align="center" style=" height: 30px;">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style=" height: 15px;">
-                        <div align="right" style="margin-right:20px">
-                            &nbsp;</div>
-                    </td>
-                    <td style=" height: 15px;">&nbsp;</td>
-                </tr>
+               
                 <tr>
                     <td style=" height: 15px;" align="center">
                         <div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                             <span style="font-size:20px;color:black"><strong>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI</strong></span>
                         </div>
                     </td>
@@ -222,12 +217,16 @@ Investigator for improving and revising the proposal. If needed add more pages):
                     <td style=" height: 15px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style=" height: 15px;">
-                    <div align="center">
-                        <asp:Button ID="Button1" runat="server" Text="Print"  Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClientClick="basicPopup()" />
-                    <br />
-                         </div>  
-                    </td>
+                    <td colspan="3" style="height: 15px;">
+                    <div align="right" style="margin-right: 20px">
+                        
+                        <asp:Button ID="HOD_approve" runat="server" Text="Print" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClientClick="basicPopup()" />
+
+                        <%--<asp:Button ID="Button2" runat="server" Text="Print"  />--%>
+                                               
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </td>
                 </tr>
                  <tr>
                     <td style=" height: 25px;" align="center"></td>

@@ -25,7 +25,19 @@ public partial class Application_Forms_Views_P2_print_form : System.Web.UI.Page
         {
             sqlCon.Open();
 
-            string query = "Select Name_Of_PI,Name_Of_FUnding_Agency,Comments,Objectives,Supporting_Elements,Alternating_Strategies, Relevance_Applicability,Comments_Budget,Suggestions,Reviewer_Name,Department from form2 where Application_no = " + Request.QueryString["App_No"];
+            string app_no_local = "";
+
+            string query1 = "Select application_no from approvals where form_id = " + Request.QueryString["App_No"];
+
+            MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
+
+            MySqlDataReader dr1 = cmd1.ExecuteReader();
+            dr1.Read();
+            app_no_local = dr1.GetValue(0).ToString();
+            dr1.Close();
+
+
+            string query = "Select Name_Of_PI,Name_Of_FUnding_Agency,Comments,Objectives,Supporting_Elements,Alternating_Strategies, Relevance_Applicability,Comments_Budget,Suggestions,Reviewer_Name,Department from form2 where Application_no = " + app_no_local;
 
             MySqlCommand cmd = new MySqlCommand(query, sqlCon);
 
