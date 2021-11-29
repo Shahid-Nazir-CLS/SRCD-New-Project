@@ -21,7 +21,7 @@
                         <td class="head_already" style="height: 30px">
                             <div style="text-align: center">
                                 <span>
-                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Approved Forms"></asp:Label></span>
+                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Approved / Rejected Forms"></asp:Label></span>
                             </div>
                         </td>
                     </tr>
@@ -74,7 +74,7 @@
 
                                          <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="Print" ID="lnkSelect" CommandArgument='<%# Eval("form_id") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="View" ID="lnkSelect" CommandArgument='<%# Eval("Form_Id") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 

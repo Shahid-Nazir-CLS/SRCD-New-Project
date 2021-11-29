@@ -41,7 +41,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
 
                 dr.Close();
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_Hod_Approval_Required='yes' and (Hod_Approval = 'Approved' or Hod_Approval = 'Rejected') and dept_id = '" + dept_id + "'";
+                cmd.CommandText = "Select form_name, form_id, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_Hod_Approval_Required='yes' and (Hod_Approval = 'Approved' or Hod_Approval = 'Rejected') and dept_id = '" + dept_id + "'";
                 cmd.Connection = sqlCon;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -59,7 +59,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
             else if (Session["user_type"].ToString() == "srcd")
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_SrcdDean_Approval_Required ='yes' and (srcd_Approval = 'Approved' or srcd_Approval = 'Rejected')";
+                cmd.CommandText = "Select form_name, form_id, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_SrcdDean_Approval_Required ='yes' and (srcd_Approval = 'Approved' or srcd_Approval = 'Rejected')";
                 cmd.Connection = sqlCon;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -75,7 +75,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
             else if (Session["user_type"].ToString() == "assoc_dean")
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_SrcdAssoDean_Required ='yes' and (associate_dean_Approval = 'Approved' or associate_dean_Approval = 'Rejected')";
+                cmd.CommandText = "Select form_name, form_id, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where is_SrcdAssoDean_Required ='yes' and (associate_dean_Approval = 'Approved' or associate_dean_Approval = 'Rejected')";
                 cmd.Connection = sqlCon;
 
                 MySqlDataAdapter sqlDa = new MySqlDataAdapter();
@@ -102,7 +102,7 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
 
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "Select form_id, form_name, application_no, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where submitted_by = '" + username + "'";
+                cmd.CommandText = "Select form_name, form_id, submitted_by, submitted_on,Hod_Approval,srcd_Approval,associate_dean_Approval from approvals where submitted_by = '" + username + "'";
                 cmd.Connection = sqlCon;
 
                 //submitted_by_field.Visible = false;
@@ -124,10 +124,10 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
 
     public void onClickSelect(Object sender, EventArgs e)
     {
-        //    int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
-        //    string app_No = "" + app_Number;
+        int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
+        string app_No = "" + app_Number;
 
-        //    Response.Redirect("P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx?App_No=" + app_No);
+        Response.Redirect("P1_view_form.aspx?App_No=" + app_No);
 
     }
 }

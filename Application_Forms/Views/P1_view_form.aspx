@@ -14,6 +14,11 @@
         <tbody>
             <tr>
                 <td colspan="3" style="height: 15px;" align="center">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <div>
                         <span style="font-size: 20px; color: black"><strong>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI</strong></span>
                     </div>
@@ -279,11 +284,11 @@
             <tr>
                 <td colspan="3" style="height: 15px;" align="center"></td>
             </tr>
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
+
+
+
+
+
             <tr>
                 <td>
                     <br />
@@ -291,14 +296,167 @@
                 </td>
             </tr>
 
+            <tr>
+                                <td style="height: 30px;">
+                                    <div style="margin-left: 10px; margin-right: 10px" align="center">
+                                        <hr style="border-top: 1px dashed black;" />
+                                    </div>
+                                </td>
+                            </tr>
+
+
+            <tr>
+                <td colspan="3" style="height: 15px;" align="center">
+                    <br />
+
+                   <table style="width: 100%; margin-left: 10%">
+                                            <tr>
+                                                <td style="width: 33%">
+                                                    <table style="width: 100%">
+                                                        <tr>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="auto-style1" style="height: 22px"> <asp:Label ID="lbl_hod_name" runat="server"></asp:Label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="auto-style5">
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px"><strong><span>
+                                                                        <asp:Label ID="lbl_HOD_status" runat="server"></asp:Label></span></strong></span>
+                                                                    <%--<%=HOD_Signature%>--%>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <span><strong>Date: </strong></span>
+
+                                                                    <asp:Label ID="lbl_HOD_Date" runat="server" Font-Size="12px" Text=""></asp:Label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="auto-style2">
+                                                                <div align="left" class="auto-style6">
+                                                                    <span style="color: black; font-size: 13px"><strong>(Head of Department) </strong></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                                 <td style="width: 33%">
+                                                    <table style="width: 100%">
+                                                        <tr>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="auto-style1"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="auto-style5">
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px"><strong><span>
+                                                                        <asp:Label ID="lbl_srcd_status" runat="server"></asp:Label></span></strong></span>
+                                                                    <%--<%=HOD_Signature%>--%>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <span><strong>Date: </strong></span>
+
+                                                                    <asp:Label ID="lbl_srcd_date" runat="server" Font-Size="12px" Text=""></asp:Label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="auto-style2">
+                                                                <div align="left" class="auto-style7">
+                                                                    <span style="color: black; font-size: 13px"><strong>(SRCD) </strong></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                                <td style="width: 33%">
+                                                    <table style="width: 100%">
+                                                        <tr>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px"><strong><span></span></strong></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="auto-style1"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px"><strong><span><asp:Label ID="lbl_assoc_status" runat="server"></asp:Label></span></strong></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="auto-style4">
+                                                                <div align="left">
+                                                                    <span><strong>Date: </strong></span>
+
+                                                                    <asp:Label ID="lbl_assoc_date" runat="server" Font-Size="12px" Text=""></asp:Label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="auto-style3">
+                                                                <div align="left">
+                                                                    <span style="color: black; font-size: 13px"><strong>(Associate Dean) </strong></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                           
+                                        </table>
+
+                </td>
+            </tr>
+            
+           
+                            <tr>
+                                <td style="height: 30px;">
+                                    <div style="margin-left: 10px; margin-right: 10px" align="center">
+                                        <br />
+                                        <br />
+                                        <hr style="border-top: 1px dashed black;" />
+                                    </div>
+                                </td>
+                            </tr>
             
             <tr>
                 <td colspan="3" style="height: 15px;">
                     <div align="right" style="margin-right: 20px">
                         
-                        <asp:Button ID="HOD_approve" runat="server" Text="Print" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClick="Print" />
+                        <asp:Button ID="HOD_approve" runat="server" Text="Print" Font-Bold="True" TabIndex="4" Height="30px" Width="180px" OnClientClick="basicPopup()" />
 
-                        <asp:Button ID="Button2" runat="server" Text="Print" OnClientClick="basicPopup()" />
+                        <%--<asp:Button ID="Button2" runat="server" Text="Print"  />--%>
                                                
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>

@@ -49,9 +49,20 @@ public partial class P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL : Sy
                 using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
                 {
                     sqlCon.Open();
+
+                    string query1 = "Select application_no from approvals where form_id = " + Request.QueryString["App_No"];
+
+                    MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
+
+                    MySqlDataReader dr1 = cmd1.ExecuteReader();
+                    dr1.Read();
+                    string app_no = dr1.GetValue(0).ToString();
+
+                    dr1.Close();
+
                     MySqlCommand sqlCmd = new MySqlCommand("form1_hod_add", sqlCon);
                     sqlCmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("_application_no", Convert.ToInt32(Request.QueryString["App_No"]));
+                    sqlCmd.Parameters.AddWithValue("_application_no", Convert.ToInt32(app_no));
                     sqlCmd.Parameters.AddWithValue("_reviewer1", name_of_reviewer1.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("_reviewer2", name_of_reviewer2.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("_hod_approval_time", DateTime.Now.ToString());
@@ -78,7 +89,17 @@ public partial class P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL : Sy
         {
             sqlCon.Open();
 
-            string query = "Select Funding_Agency_Scheme, Title_Of_The_Proposal, PI_And_CI_Details, Address_Of_The_Funding_Agency, Number_Of_Final_Hard_And_Soft_Copies, Last_Date from form1 where Application_no = " + Request.QueryString["App_No"];
+            string query1 = "Select application_no from approvals where form_id = " + Request.QueryString["App_No"];
+
+            MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
+
+            MySqlDataReader dr1 = cmd1.ExecuteReader();
+            dr1.Read();
+            string app_no = dr1.GetValue(0).ToString();
+
+            dr1.Close();
+
+            string query = "Select Funding_Agency_Scheme, Title_Of_The_Proposal, PI_And_CI_Details, Address_Of_The_Funding_Agency, Number_Of_Final_Hard_And_Soft_Copies, Last_Date from form1 where Application_no = " + app_no;
 
             MySqlCommand cmd = new MySqlCommand(query, sqlCon);
 
@@ -104,9 +125,20 @@ public partial class P1_COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL : Sy
                 using (MySqlConnection sqlCon = new MySqlConnection(connectionString))
                 {
                     sqlCon.Open();
+
+                    string query1 = "Select application_no from approvals where form_id = " + Request.QueryString["App_No"];
+
+                    MySqlCommand cmd1 = new MySqlCommand(query1, sqlCon);
+
+                    MySqlDataReader dr1 = cmd1.ExecuteReader();
+                    dr1.Read();
+                    string app_no = dr1.GetValue(0).ToString();
+
+                    dr1.Close();
+
                     MySqlCommand sqlCmd = new MySqlCommand("form1_hod_reject", sqlCon);
                     sqlCmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("_application_no", Convert.ToInt32(Request.QueryString["App_No"]));
+                    sqlCmd.Parameters.AddWithValue("_application_no", Convert.ToInt32(app_no));
                     sqlCmd.Parameters.AddWithValue("_hod_approval_time", DateTime.Now.ToString());
                     sqlCmd.ExecuteNonQuery();
                     lbl_success.Text = "Rejected Successfully";

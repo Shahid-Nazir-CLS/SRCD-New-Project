@@ -87,7 +87,7 @@ public partial class Application_Forms_Views_P4_Approval_of_interview_panel : Sy
             dr.Close();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select form_id, form_name, application_no, submitted_on from approvals where approved = 'Approved' and submitted_by = '" + username + "'";
+            cmd.CommandText = "Select form_name, form_id, submitted_on from approvals where approved = 'Approved' and submitted_by = '" + username + "'";
             cmd.Connection = sqlCon;
 
             MySqlDataAdapter sqlDa = new MySqlDataAdapter();

@@ -20,7 +20,7 @@
                    <tr valign="top">
                     <td class="head_already" style="height: 30px">
                         <div style="text-align: center">
-                            <span>&nbsp;<span style="text-decoration: none">Approved Projects</span></span>
+                            <span>&nbsp;<span style="text-decoration: none">Approved Forms</span></span>
                         </div>
                     </td>
                 </tr>
@@ -65,15 +65,19 @@
                                 <asp:GridView ID="gvProduct" runat="server" Width="100%" CellSpacing="3" CellPadding="5" AutoGenerateColumns="False" BorderColor="#008080" BorderStyle="Solid" BorderWidth="1px">
                                     <Columns>
 
-                                        <asp:BoundField DataField="form_id" HeaderText="Sr. No" />
+                                         <asp:TemplateField HeaderText="Sr No">
+                                            <ItemTemplate>
+                                                <%#Container.DataItemIndex+1  %>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
                                         <asp:BoundField DataField="form_name" HeaderText="Form Name" />
-                                        <asp:BoundField DataField="application_no" HeaderText="Form No" />
+                                        <asp:BoundField DataField="form_id" HeaderText="Application No" />
                                         <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
 
 
                                         <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="View Approved Form" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="View Approved Form" ID="lnkSelect" CommandArgument='<%# Eval("Form_Id") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 

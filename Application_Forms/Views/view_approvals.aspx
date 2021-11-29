@@ -21,7 +21,7 @@
                         <td class="head_already" style="height: 30px">
                             <div style="text-align: center">
                                 <span>
-                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Approved Forms"></asp:Label></span>
+                                    <asp:Label ID="lbl_current_financial_year" runat="server" Text="Approved /Rejected Forms"></asp:Label></span>
                             </div>
                         </td>
                     </tr>
@@ -62,7 +62,7 @@
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:BoundField DataField="form_name" HeaderText="Form Name" />
-                                        <asp:BoundField DataField="application_no" HeaderText="Application. No" />
+                                        <asp:BoundField DataField="form_id" HeaderText="Application. No" />
                                         <asp:BoundField DataField="submitted_by" HeaderText="Submitted By"  Visible="true" runat="server"/>
                                         <asp:BoundField DataField="submitted_on" HeaderText="Submitted On" />
                                         <asp:BoundField DataField="Hod_Approval" HeaderText="Hod Approval" />
@@ -71,7 +71,7 @@
 
                                          <asp:TemplateField HeaderText="Action">
                                             <ItemTemplate>
-                                                <asp:LinkButton Text="Print" ID="lnkSelect" CommandArgument='<%# Eval("Application_No") %>' OnClick="onClickSelect" runat="server" />
+                                                <asp:LinkButton Text="View" ID="lnkSelect" CommandArgument='<%# Eval("Form_Id") %>' OnClick="onClickSelect" runat="server" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
 

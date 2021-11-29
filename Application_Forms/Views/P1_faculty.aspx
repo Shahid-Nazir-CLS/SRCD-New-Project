@@ -6,6 +6,11 @@
             <tr>
                 <td colspan="3" style="height: 15px;" align="center">
                     <div>
+                        <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                         <span style="font-size: 20px; color: black"><strong>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI</strong></span>
                     </div>
                 </td>

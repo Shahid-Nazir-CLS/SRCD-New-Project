@@ -121,10 +121,10 @@ public partial class Application_Forms_Views_view_approvals : System.Web.UI.Page
 
     public void onClickSelect(Object sender, EventArgs e)
     {
-        //    int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
-        //    string app_No = "" + app_Number;
+        int app_Number = Convert.ToInt32((sender as LinkButton).CommandArgument);
+        string app_No = "" + app_Number;
 
-        //    Response.Redirect("P1-COVERING_LETTER_FOR_SUBMITTING_NEW_PROJECT_PROPOSAL.aspx?App_No=" + app_No);
+        Response.Redirect("P1_view_form.aspx?App_No=" + app_No);
 
     }
 }
